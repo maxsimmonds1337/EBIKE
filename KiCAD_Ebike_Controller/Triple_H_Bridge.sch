@@ -1,0 +1,592 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 7
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R R?
+U 1 1 5FEC55C0
+P 3750 2400
+AR Path="/5FEC55C0" Ref="R?"  Part="1" 
+AR Path="/5F8D3A83/5FEC55C0" Ref="R?"  Part="1" 
+AR Path="/5FECEF22/5FEC55C0" Ref="R?"  Part="1" 
+F 0 "R?" V 3543 2400 50  0000 C CNN
+F 1 "20m" V 3634 2400 50  0000 C CNN
+F 2 "" V 3680 2400 50  0001 C CNN
+F 3 "~" H 3750 2400 50  0001 C CNN
+	1    3750 2400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3800 2600 3550 2600
+Wire Wire Line
+	4250 2400 4350 2400
+Wire Wire Line
+	3950 2400 3900 2400
+$Comp
+L Diode:1N47xxA D?
+U 1 1 5FEC55C9
+P 4100 2400
+AR Path="/5F8D3A83/5FEC55C9" Ref="D?"  Part="1" 
+AR Path="/5FECEF22/5FEC55C9" Ref="D?"  Part="1" 
+F 0 "D?" H 4100 2616 50  0000 C CNN
+F 1 "1N47xxA" H 4100 2525 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 4100 2225 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85816/1n4728a.pdf" H 4100 2400 50  0001 C CNN
+	1    4100 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FEC55CF
+P 3950 2600
+AR Path="/5FEC55CF" Ref="R?"  Part="1" 
+AR Path="/5F8D3A83/5FEC55CF" Ref="R?"  Part="1" 
+AR Path="/5FECEF22/5FEC55CF" Ref="R?"  Part="1" 
+F 0 "R?" V 3743 2600 50  0000 C CNN
+F 1 "20m" V 3834 2600 50  0000 C CNN
+F 2 "" V 3880 2600 50  0001 C CNN
+F 3 "~" H 3950 2600 50  0001 C CNN
+	1    3950 2600
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FEC55D5
+P 3750 3500
+AR Path="/5FEC55D5" Ref="R?"  Part="1" 
+AR Path="/5F8D3A83/5FEC55D5" Ref="R?"  Part="1" 
+AR Path="/5FECEF22/5FEC55D5" Ref="R?"  Part="1" 
+F 0 "R?" V 3543 3500 50  0000 C CNN
+F 1 "20m" V 3634 3500 50  0000 C CNN
+F 2 "" V 3680 3500 50  0001 C CNN
+F 3 "~" H 3750 3500 50  0001 C CNN
+	1    3750 3500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3600 3500 3550 3500
+Wire Wire Line
+	3950 3700 3550 3700
+Wire Wire Line
+	3950 3500 3900 3500
+$Comp
+L Diode:1N47xxA D?
+U 1 1 5FEC55DE
+P 4100 3500
+AR Path="/5F8D3A83/5FEC55DE" Ref="D?"  Part="1" 
+AR Path="/5FECEF22/5FEC55DE" Ref="D?"  Part="1" 
+F 0 "D?" H 4100 3716 50  0000 C CNN
+F 1 "1N47xxA" H 4100 3625 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 4100 3325 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85816/1n4728a.pdf" H 4100 3500 50  0001 C CNN
+	1    4100 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 3700 4250 3700
+$Comp
+L Device:R R?
+U 1 1 5FEC55E5
+P 4100 3700
+AR Path="/5FEC55E5" Ref="R?"  Part="1" 
+AR Path="/5F8D3A83/5FEC55E5" Ref="R?"  Part="1" 
+AR Path="/5FECEF22/5FEC55E5" Ref="R?"  Part="1" 
+F 0 "R?" V 3893 3700 50  0000 C CNN
+F 1 "20m" V 3984 3700 50  0000 C CNN
+F 2 "" V 4030 3700 50  0001 C CNN
+F 3 "~" H 4100 3700 50  0001 C CNN
+	1    4100 3700
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	4350 3500 4250 3500
+Wire Wire Line
+	3550 3700 3550 3500
+Wire Wire Line
+	4350 2400 4350 2600
+Wire Wire Line
+	4350 2600 4100 2600
+Wire Wire Line
+	4650 2600 4650 2750
+Wire Wire Line
+	3550 2400 3600 2400
+Wire Wire Line
+	3550 2400 3550 2600
+Connection ~ 3550 2600
+Connection ~ 3550 3700
+$Comp
+L Device:R R?
+U 1 1 5FEC55F7
+P 5800 2400
+AR Path="/5FEC55F7" Ref="R?"  Part="1" 
+AR Path="/5F8D3A83/5FEC55F7" Ref="R?"  Part="1" 
+AR Path="/5FECEF22/5FEC55F7" Ref="R?"  Part="1" 
+F 0 "R?" V 5593 2400 50  0000 C CNN
+F 1 "20m" V 5684 2400 50  0000 C CNN
+F 2 "" V 5730 2400 50  0001 C CNN
+F 3 "~" H 5800 2400 50  0001 C CNN
+	1    5800 2400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5900 2600 5600 2600
+Wire Wire Line
+	6400 2400 6450 2400
+Wire Wire Line
+	6100 2400 5950 2400
+$Comp
+L Diode:1N47xxA D?
+U 1 1 5FEC5600
+P 6250 2400
+AR Path="/5F8D3A83/5FEC5600" Ref="D?"  Part="1" 
+AR Path="/5FECEF22/5FEC5600" Ref="D?"  Part="1" 
+F 0 "D?" H 6250 2616 50  0000 C CNN
+F 1 "1N47xxA" H 6250 2525 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 6250 2225 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85816/1n4728a.pdf" H 6250 2400 50  0001 C CNN
+	1    6250 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FEC5606
+P 6050 2600
+AR Path="/5FEC5606" Ref="R?"  Part="1" 
+AR Path="/5F8D3A83/5FEC5606" Ref="R?"  Part="1" 
+AR Path="/5FECEF22/5FEC5606" Ref="R?"  Part="1" 
+F 0 "R?" V 5843 2600 50  0000 C CNN
+F 1 "20m" V 5934 2600 50  0000 C CNN
+F 2 "" V 5980 2600 50  0001 C CNN
+F 3 "~" H 6050 2600 50  0001 C CNN
+	1    6050 2600
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FEC560C
+P 5750 3500
+AR Path="/5FEC560C" Ref="R?"  Part="1" 
+AR Path="/5F8D3A83/5FEC560C" Ref="R?"  Part="1" 
+AR Path="/5FECEF22/5FEC560C" Ref="R?"  Part="1" 
+F 0 "R?" V 5543 3500 50  0000 C CNN
+F 1 "20m" V 5634 3500 50  0000 C CNN
+F 2 "" V 5680 3500 50  0001 C CNN
+F 3 "~" H 5750 3500 50  0001 C CNN
+	1    5750 3500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5600 3500 5550 3500
+Wire Wire Line
+	5850 3700 5550 3700
+Wire Wire Line
+	6050 3500 5900 3500
+$Comp
+L Diode:1N47xxA D?
+U 1 1 5FEC5615
+P 6200 3500
+AR Path="/5F8D3A83/5FEC5615" Ref="D?"  Part="1" 
+AR Path="/5FECEF22/5FEC5615" Ref="D?"  Part="1" 
+F 0 "D?" H 6200 3716 50  0000 C CNN
+F 1 "1N47xxA" H 6200 3625 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 6200 3325 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85816/1n4728a.pdf" H 6200 3500 50  0001 C CNN
+	1    6200 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 3700 6150 3700
+$Comp
+L Device:R R?
+U 1 1 5FEC561C
+P 6000 3700
+AR Path="/5FEC561C" Ref="R?"  Part="1" 
+AR Path="/5F8D3A83/5FEC561C" Ref="R?"  Part="1" 
+AR Path="/5FECEF22/5FEC561C" Ref="R?"  Part="1" 
+F 0 "R?" V 5793 3700 50  0000 C CNN
+F 1 "20m" V 5884 3700 50  0000 C CNN
+F 2 "" V 5930 3700 50  0001 C CNN
+F 3 "~" H 6000 3700 50  0001 C CNN
+	1    6000 3700
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	6450 3700 6450 3500
+Wire Wire Line
+	6450 3500 6350 3500
+Wire Wire Line
+	5550 3700 5550 3500
+Wire Wire Line
+	6450 2400 6450 2600
+Wire Wire Line
+	6450 2600 6200 2600
+Wire Wire Line
+	6750 2600 6750 2850
+Wire Wire Line
+	5600 2400 5650 2400
+Wire Wire Line
+	5600 2400 5600 2600
+Connection ~ 5600 2600
+$Comp
+L Device:R R?
+U 1 1 5FEC562C
+P 8100 2400
+AR Path="/5FEC562C" Ref="R?"  Part="1" 
+AR Path="/5F8D3A83/5FEC562C" Ref="R?"  Part="1" 
+AR Path="/5FECEF22/5FEC562C" Ref="R?"  Part="1" 
+F 0 "R?" V 7893 2400 50  0000 C CNN
+F 1 "20m" V 7984 2400 50  0000 C CNN
+F 2 "" V 8030 2400 50  0001 C CNN
+F 3 "~" H 8100 2400 50  0001 C CNN
+	1    8100 2400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8200 2600 7900 2600
+Wire Wire Line
+	8700 2400 8750 2400
+Wire Wire Line
+	8400 2400 8250 2400
+$Comp
+L Diode:1N47xxA D?
+U 1 1 5FEC5635
+P 8550 2400
+AR Path="/5F8D3A83/5FEC5635" Ref="D?"  Part="1" 
+AR Path="/5FECEF22/5FEC5635" Ref="D?"  Part="1" 
+F 0 "D?" H 8550 2616 50  0000 C CNN
+F 1 "1N47xxA" H 8550 2525 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 8550 2225 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85816/1n4728a.pdf" H 8550 2400 50  0001 C CNN
+	1    8550 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FEC563B
+P 8350 2600
+AR Path="/5FEC563B" Ref="R?"  Part="1" 
+AR Path="/5F8D3A83/5FEC563B" Ref="R?"  Part="1" 
+AR Path="/5FECEF22/5FEC563B" Ref="R?"  Part="1" 
+F 0 "R?" V 8143 2600 50  0000 C CNN
+F 1 "20m" V 8234 2600 50  0000 C CNN
+F 2 "" V 8280 2600 50  0001 C CNN
+F 3 "~" H 8350 2600 50  0001 C CNN
+	1    8350 2600
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FEC5641
+P 8050 3500
+AR Path="/5FEC5641" Ref="R?"  Part="1" 
+AR Path="/5F8D3A83/5FEC5641" Ref="R?"  Part="1" 
+AR Path="/5FECEF22/5FEC5641" Ref="R?"  Part="1" 
+F 0 "R?" V 7843 3500 50  0000 C CNN
+F 1 "20m" V 7934 3500 50  0000 C CNN
+F 2 "" V 7980 3500 50  0001 C CNN
+F 3 "~" H 8050 3500 50  0001 C CNN
+	1    8050 3500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7900 3500 7850 3500
+Wire Wire Line
+	8150 3700 7850 3700
+Wire Wire Line
+	8350 3500 8200 3500
+$Comp
+L Diode:1N47xxA D?
+U 1 1 5FEC564A
+P 8500 3500
+AR Path="/5F8D3A83/5FEC564A" Ref="D?"  Part="1" 
+AR Path="/5FECEF22/5FEC564A" Ref="D?"  Part="1" 
+F 0 "D?" H 8500 3716 50  0000 C CNN
+F 1 "1N47xxA" H 8500 3625 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 8500 3325 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85816/1n4728a.pdf" H 8500 3500 50  0001 C CNN
+	1    8500 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 3700 8450 3700
+$Comp
+L Device:R R?
+U 1 1 5FEC5651
+P 8300 3700
+AR Path="/5FEC5651" Ref="R?"  Part="1" 
+AR Path="/5F8D3A83/5FEC5651" Ref="R?"  Part="1" 
+AR Path="/5FECEF22/5FEC5651" Ref="R?"  Part="1" 
+F 0 "R?" V 8093 3700 50  0000 C CNN
+F 1 "20m" V 8184 3700 50  0000 C CNN
+F 2 "" V 8230 3700 50  0001 C CNN
+F 3 "~" H 8300 3700 50  0001 C CNN
+	1    8300 3700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8750 3700 8750 3500
+Wire Wire Line
+	8750 3500 8650 3500
+Wire Wire Line
+	7850 3700 7850 3500
+Wire Wire Line
+	8750 2400 8750 2600
+Wire Wire Line
+	8750 2600 8500 2600
+Wire Wire Line
+	7900 2600 7900 2400
+Wire Wire Line
+	7900 2600 7450 2600
+Wire Wire Line
+	5600 2600 5150 2600
+Wire Wire Line
+	7450 2600 7450 4200
+Wire Wire Line
+	9050 1900 6750 1900
+Connection ~ 6750 1900
+Wire Wire Line
+	6750 1900 4650 1900
+Wire Wire Line
+	4650 2200 4650 1900
+Wire Wire Line
+	6750 2200 6750 1900
+Wire Wire Line
+	9050 2200 9050 1900
+Wire Wire Line
+	9050 3700 9050 4450
+Connection ~ 6750 4450
+Wire Wire Line
+	4650 4450 6750 4450
+Wire Wire Line
+	6750 3700 6750 4450
+Wire Wire Line
+	6750 4450 9050 4450
+Connection ~ 4650 3000
+Wire Wire Line
+	4650 3000 4650 3300
+Wire Wire Line
+	5250 3000 6750 3000
+Connection ~ 6750 3000
+Wire Wire Line
+	7550 4200 7550 3100
+Wire Wire Line
+	10050 2750 4650 2750
+Connection ~ 4650 2750
+Wire Wire Line
+	4650 2750 4650 3000
+Wire Wire Line
+	10150 2850 6750 2850
+Wire Wire Line
+	6750 3000 6750 2850
+Connection ~ 6750 2850
+Wire Wire Line
+	6750 3000 6750 3300
+Wire Wire Line
+	9050 2600 9050 2950
+Wire Wire Line
+	9050 3100 9050 3300
+Connection ~ 9050 3100
+Wire Wire Line
+	7550 3100 9050 3100
+Wire Wire Line
+	10050 2950 9050 2950
+Connection ~ 9050 2950
+Wire Wire Line
+	9050 2950 9050 3100
+$Comp
+L Device:Q_NMOS_GDS Q?
+U 1 1 5FEC568A
+P 4550 2400
+AR Path="/5F8D3A83/5FEC568A" Ref="Q?"  Part="1" 
+AR Path="/5FECEF22/5FEC568A" Ref="Q?"  Part="1" 
+F 0 "Q?" H 4756 2446 50  0000 L CNN
+F 1 "DMT10H010LK3" H 4400 2150 50  0000 L CNN
+F 2 "" H 4750 2500 50  0001 C CNN
+F 3 "~" H 4550 2400 50  0001 C CNN
+	1    4550 2400
+	1    0    0    -1  
+$EndComp
+Connection ~ 4350 2400
+$Comp
+L Device:Q_NMOS_GDS Q?
+U 1 1 5FEC5691
+P 4550 3500
+AR Path="/5F8D3A83/5FEC5691" Ref="Q?"  Part="1" 
+AR Path="/5FECEF22/5FEC5691" Ref="Q?"  Part="1" 
+F 0 "Q?" H 4756 3546 50  0000 L CNN
+F 1 "DMT10H010LK3" H 4400 3250 50  0000 L CNN
+F 2 "" H 4750 3600 50  0001 C CNN
+F 3 "~" H 4550 3500 50  0001 C CNN
+	1    4550 3500
+	1    0    0    -1  
+$EndComp
+Connection ~ 4350 3500
+Wire Wire Line
+	4350 3500 4350 3700
+$Comp
+L Device:Q_NMOS_GDS Q?
+U 1 1 5FEC5699
+P 6650 3500
+AR Path="/5F8D3A83/5FEC5699" Ref="Q?"  Part="1" 
+AR Path="/5FECEF22/5FEC5699" Ref="Q?"  Part="1" 
+F 0 "Q?" H 6856 3546 50  0000 L CNN
+F 1 "DMT10H010LK3" H 6500 3250 50  0000 L CNN
+F 2 "" H 6850 3600 50  0001 C CNN
+F 3 "~" H 6650 3500 50  0001 C CNN
+	1    6650 3500
+	1    0    0    -1  
+$EndComp
+Connection ~ 6450 3500
+$Comp
+L Device:Q_NMOS_GDS Q?
+U 1 1 5FEC56A0
+P 8950 3500
+AR Path="/5F8D3A83/5FEC56A0" Ref="Q?"  Part="1" 
+AR Path="/5FECEF22/5FEC56A0" Ref="Q?"  Part="1" 
+F 0 "Q?" H 9156 3546 50  0000 L CNN
+F 1 "DMT10H010LK3" H 8800 3250 50  0000 L CNN
+F 2 "" H 9150 3600 50  0001 C CNN
+F 3 "~" H 8950 3500 50  0001 C CNN
+	1    8950 3500
+	1    0    0    -1  
+$EndComp
+Connection ~ 8750 3500
+$Comp
+L Device:Q_NMOS_GDS Q?
+U 1 1 5FEC56A7
+P 8950 2400
+AR Path="/5F8D3A83/5FEC56A7" Ref="Q?"  Part="1" 
+AR Path="/5FECEF22/5FEC56A7" Ref="Q?"  Part="1" 
+F 0 "Q?" H 9156 2446 50  0000 L CNN
+F 1 "DMT10H010LK3" H 8800 2150 50  0000 L CNN
+F 2 "" H 9150 2500 50  0001 C CNN
+F 3 "~" H 8950 2400 50  0001 C CNN
+	1    8950 2400
+	1    0    0    -1  
+$EndComp
+Connection ~ 8750 2400
+$Comp
+L Device:Q_NMOS_GDS Q?
+U 1 1 5FEC56AE
+P 6650 2400
+AR Path="/5F8D3A83/5FEC56AE" Ref="Q?"  Part="1" 
+AR Path="/5FECEF22/5FEC56AE" Ref="Q?"  Part="1" 
+F 0 "Q?" H 6856 2446 50  0000 L CNN
+F 1 "DMT10H010LK3" H 6500 2150 50  0000 L CNN
+F 2 "" H 6850 2500 50  0001 C CNN
+F 3 "~" H 6650 2400 50  0001 C CNN
+	1    6650 2400
+	1    0    0    -1  
+$EndComp
+Connection ~ 6450 2400
+Wire Wire Line
+	4650 3700 4650 4450
+Text HLabel 10050 2750 2    50   Input ~ 0
+PHASE_A
+Text HLabel 10050 2850 2    50   Input ~ 0
+PHASE_B
+Text HLabel 10050 2950 2    50   Input ~ 0
+PHASE_C
+Wire Wire Line
+	3150 3000 4650 3000
+Entry Wire Line
+	3050 3800 3150 3700
+Entry Wire Line
+	2950 3800 3050 3700
+Text Label 3300 2600 0    50   ~ 0
+PA_1
+Text Label 3300 3000 0    50   ~ 0
+PA_2
+Text Label 3300 3700 0    50   ~ 0
+PA_3
+Text Label 1600 3800 0    50   ~ 0
+PA_[1..3]
+Entry Wire Line
+	3150 3800 3250 3700
+Text HLabel 1350 3800 0    50   Input ~ 0
+PHASE_A_FETs
+Wire Wire Line
+	3250 3700 3550 3700
+Wire Wire Line
+	3150 3000 3150 3700
+Text HLabel 1350 4050 0    50   Input ~ 0
+PHASE_B_FETs
+Text Label 1600 4050 0    50   ~ 0
+PB_[1..3]
+Text Label 1600 4300 0    50   ~ 0
+PC_[1..3]
+Text HLabel 1300 4300 0    50   Input ~ 0
+PHASE_C_FETs
+Entry Wire Line
+	5250 4050 5350 3950
+Entry Wire Line
+	5150 4050 5250 3950
+Entry Wire Line
+	5150 3950 5050 4050
+Wire Wire Line
+	5150 2600 5150 3950
+Wire Wire Line
+	5250 3000 5250 3950
+Text Label 5350 2600 0    50   ~ 0
+PB_1
+Text Label 5350 3000 0    50   ~ 0
+PB_2
+Text Label 5350 3700 0    50   ~ 0
+PB_3
+Wire Wire Line
+	3050 2600 3550 2600
+Wire Wire Line
+	3050 2600 3050 3700
+Wire Wire Line
+	5350 3950 5350 3700
+Wire Wire Line
+	5350 3700 5550 3700
+Connection ~ 5550 3700
+Entry Wire Line
+	7350 4300 7450 4200
+Entry Wire Line
+	7450 4300 7550 4200
+Entry Wire Line
+	7550 4300 7650 4200
+Wire Wire Line
+	7650 4200 7650 3700
+Wire Wire Line
+	7650 3700 7850 3700
+Connection ~ 7850 3700
+Connection ~ 7900 2600
+Wire Wire Line
+	7900 2400 7950 2400
+Text Label 7650 2600 0    50   ~ 0
+PC_1
+Text Label 7650 3100 0    50   ~ 0
+PC_2
+Text Label 7650 3700 0    50   ~ 0
+PC_3
+Wire Wire Line
+	6750 4450 6750 5750
+Text HLabel 6750 5750 3    50   Output ~ 0
+FET_GND
+Text HLabel 6750 1400 1    50   Output ~ 0
++48V
+Wire Wire Line
+	6750 1400 6750 1900
+Wire Wire Line
+	6750 2850 6050 2850
+Wire Bus Line
+	1350 3800 3150 3800
+Wire Bus Line
+	1350 4050 5250 4050
+Wire Bus Line
+	1300 4300 7550 4300
+$EndSCHEMATC
