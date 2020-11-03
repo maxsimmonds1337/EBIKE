@@ -38,14 +38,10 @@ Connection ~ 5600 2700
 Wire Wire Line
 	5600 2700 5700 2700
 Wire Wire Line
-	5600 2700 5600 2550
-Text HLabel 5600 2550 1    50   Input ~ 0
-+3v3
-Wire Wire Line
 	5500 4700 5500 4800
 Wire Wire Line
 	5600 4800 5600 4700
-Text HLabel 5500 5100 3    50   Input ~ 0
+Text HLabel 1600 2300 0    50   Input ~ 0
 GND
 Text HLabel 7850 4500 2    50   Output ~ 0
 PWM_PA15
@@ -214,25 +210,23 @@ LCD_I2C_[1..2]
 Wire Wire Line
 	7850 4500 6100 4500
 Wire Wire Line
-	5000 3900 3300 3900
-Wire Wire Line
-	5000 4000 3300 4000
+	5000 4000 3000 4000
 Wire Wire Line
 	5000 4100 3300 4100
-Text HLabel 3300 3900 0    50   Input ~ 0
+Text HLabel 2550 3900 0    50   Input ~ 0
 HALL_A_PB0
-Text HLabel 3300 4000 0    50   Input ~ 0
+Text HLabel 2550 4000 0    50   Input ~ 0
 HALL_B_PB1
-Text HLabel 3300 4100 0    50   Input ~ 0
+Text HLabel 2550 4100 0    50   Input ~ 0
 HALL_C_PB2
-Text HLabel 3300 4200 0    50   Output ~ 0
+Text HLabel 2550 4200 0    50   Output ~ 0
 nBRAKE_PA13
-Text HLabel 3300 4300 0    50   Input ~ 0
+Text HLabel 2550 4300 0    50   Input ~ 0
 nFAULT_PA14
 Wire Wire Line
-	5000 4200 3300 4200
+	5000 4200 2550 4200
 Wire Wire Line
-	3300 4300 5000 4300
+	2550 4300 5000 4300
 Wire Wire Line
 	6100 4300 7850 4300
 Text HLabel 7850 4300 2    50   Output ~ 0
@@ -243,7 +237,7 @@ Wire Wire Line
 	6100 4400 7850 4400
 Wire Wire Line
 	5000 3000 4650 3000
-Text HLabel 3300 3000 0    50   Input ~ 0
+Text HLabel 2550 3000 0    50   Input ~ 0
 nRST
 $Comp
 L Device:R_Small R?
@@ -276,41 +270,16 @@ F 3 "~" H 3950 3200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5500 4800 5500 5100
+	5500 4800 5500 4950
 Connection ~ 5500 4800
 Wire Wire Line
 	5500 4800 5600 4800
-$Comp
-L power:GND #PWR?
-U 1 1 5F9B226C
-P 3700 3650
-F 0 "#PWR?" H 3700 3400 50  0001 C CNN
-F 1 "GND" H 3705 3477 50  0000 C CNN
-F 2 "" H 3700 3650 50  0001 C CNN
-F 3 "" H 3700 3650 50  0001 C CNN
-	1    3700 3650
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4400 3500 4300 3500
 Connection ~ 4400 3500
-$Comp
-L power:GND #PWR?
-U 1 1 5F9B499D
-P 5600 4900
-F 0 "#PWR?" H 5600 4650 50  0001 C CNN
-F 1 "GND" H 5605 4727 50  0000 C CNN
-F 2 "" H 5600 4900 50  0001 C CNN
-F 3 "" H 5600 4900 50  0001 C CNN
-	1    5600 4900
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	5600 4900 5600 4800
-Connection ~ 5600 4800
-Wire Wire Line
-	5000 4400 3300 4400
-Text HLabel 3300 4400 0    50   Input ~ 0
+	5000 4400 2550 4400
+Text HLabel 2550 4400 0    50   Input ~ 0
 BRAKE_SW_PB6
 Wire Wire Line
 	3950 3300 3950 3500
@@ -331,7 +300,7 @@ F 1 "SW_Push" V 3745 3202 50  0000 R CNN
 F 2 "" H 3700 3450 50  0001 C CNN
 F 3 "~" H 3700 3450 50  0001 C CNN
 	1    3700 3250
-	0    -1   1    0   
+	0    1    1    0   
 $EndComp
 Wire Wire Line
 	3700 3450 3700 3500
@@ -341,7 +310,7 @@ Wire Wire Line
 	3700 3050 3700 3000
 Connection ~ 3700 3000
 Wire Wire Line
-	3700 3000 3300 3000
+	3700 3000 2550 3000
 Wire Wire Line
 	3700 3650 3700 3500
 Connection ~ 3700 3500
@@ -363,8 +332,146 @@ Wire Wire Line
 	4300 3500 3950 3500
 Wire Wire Line
 	4300 3200 5000 3200
+$Comp
+L Device:R_Small R?
+U 1 1 5FA92A6F
+P 2700 3700
+F 0 "R?" H 2759 3746 50  0000 L CNN
+F 1 "100k" H 2759 3655 50  0000 L CNN
+F 2 "" H 2700 3700 50  0001 C CNN
+F 3 "~" H 2700 3700 50  0001 C CNN
+	1    2700 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5FA92C9E
+P 3000 3700
+F 0 "R?" H 3059 3746 50  0000 L CNN
+F 1 "100k" H 3059 3655 50  0000 L CNN
+F 2 "" H 3000 3700 50  0001 C CNN
+F 3 "~" H 3000 3700 50  0001 C CNN
+	1    3000 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5FA92FB3
+P 3300 3700
+F 0 "R?" H 3359 3746 50  0000 L CNN
+F 1 "100k" H 3359 3655 50  0000 L CNN
+F 2 "" H 3300 3700 50  0001 C CNN
+F 3 "~" H 3300 3700 50  0001 C CNN
+	1    3300 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 3900 2700 3900
+Wire Wire Line
+	2700 3800 2700 3900
+Connection ~ 2700 3900
+Wire Wire Line
+	2700 3900 5000 3900
+Wire Wire Line
+	3000 3800 3000 4000
+Connection ~ 3000 4000
+Wire Wire Line
+	3000 4000 2550 4000
+Wire Wire Line
+	3300 3800 3300 4100
+Connection ~ 3300 4100
+Wire Wire Line
+	3300 4100 2550 4100
+Wire Wire Line
+	2700 3600 2700 3450
+Wire Wire Line
+	3000 3600 3000 3450
+Wire Wire Line
+	3300 3600 3300 3450
+Wire Wire Line
+	3300 3450 3000 3450
+Connection ~ 3000 3450
+Text HLabel 1600 1950 0    50   Input ~ 0
++3.3v
+$Comp
+L power:GND #PWR?
+U 1 1 5FABED44
+P 1950 2600
+F 0 "#PWR?" H 1950 2350 50  0001 C CNN
+F 1 "GND" H 1955 2427 50  0000 C CNN
+F 2 "" H 1950 2600 50  0001 C CNN
+F 3 "" H 1950 2600 50  0001 C CNN
+	1    1950 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FACF53C
+P 3700 3650
+F 0 "#PWR?" H 3700 3400 50  0001 C CNN
+F 1 "GND" H 3705 3477 50  0000 C CNN
+F 2 "" H 3700 3650 50  0001 C CNN
+F 3 "" H 3700 3650 50  0001 C CNN
+	1    3700 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FACFE3C
+P 5500 4950
+F 0 "#PWR?" H 5500 4700 50  0001 C CNN
+F 1 "GND" H 5505 4777 50  0000 C CNN
+F 2 "" H 5500 4950 50  0001 C CNN
+F 3 "" H 5500 4950 50  0001 C CNN
+	1    5500 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 2300 1950 2300
+Wire Wire Line
+	1950 2300 1950 2600
+Text Label 1950 1950 2    50   ~ 0
++3.3v
+$Comp
+L Device:C_Small C?
+U 1 1 5FB49C0D
+P 2100 2150
+F 0 "C?" H 2192 2196 50  0000 L CNN
+F 1 "C_Small" H 2192 2105 50  0000 L CNN
+F 2 "" H 2100 2150 50  0001 C CNN
+F 3 "~" H 2100 2150 50  0001 C CNN
+	1    2100 2150
+	1    0    0    -1  
+$EndComp
+Text Label 6000 2700 2    50   ~ 0
++3.3v
+Wire Wire Line
+	2100 2250 2100 2300
+Wire Wire Line
+	2100 2300 1950 2300
+Connection ~ 1950 2300
+Wire Wire Line
+	2100 2050 2100 1950
+Wire Wire Line
+	1600 1950 2100 1950
+Text Notes 2150 2000 0    50   ~ 0
+Decoupling Cap (place as close to IC as possible)
+Connection ~ 5700 2700
+Wire Wire Line
+	5700 2700 6000 2700
+Text Label 2450 3450 0    50   ~ 0
++3.3v
+Wire Wire Line
+	2700 3450 3000 3450
+Wire Wire Line
+	2700 3450 2450 3450
+Connection ~ 2700 3450
+Wire Wire Line
+	5000 4500 2550 4500
 Wire Bus Line
 	7200 3900 7200 4100
 Wire Bus Line
 	7150 3500 7150 3800
+Text HLabel 2550 4500 0    50   Input ~ 0
+MODE_SW_PB7
 $EndSCHEMATC

@@ -92,7 +92,7 @@ Connection ~ 4650 2700
 Wire Wire Line
 	4650 2700 4800 2700
 Text Label 5150 3300 2    50   ~ 0
-+3V3
++3.3v
 Wire Wire Line
 	7100 3950 7600 3950
 Wire Wire Line
@@ -201,7 +201,7 @@ DIR_PA1
 Wire Wire Line
 	3050 3100 5750 3100
 Text HLabel 3050 2300 0    50   Input ~ 0
-VIN
++48v
 Text Notes 5200 5650 0    50   ~ 0
 Deadtime set by:\nt(ns) = 3.7*r(kOhms)
 Wire Wire Line
@@ -223,8 +223,6 @@ Wire Wire Line
 Connection ~ 5500 2300
 Wire Wire Line
 	5100 2300 5500 2300
-Text Label 5200 2300 0    50   ~ 0
-+48v
 Wire Wire Line
 	7100 4750 7400 4750
 Wire Wire Line
@@ -391,9 +389,9 @@ Wire Wire Line
 	9150 2000 10000 2000
 Connection ~ 9150 2000
 Text Label 9750 2000 2    50   ~ 0
-+3V3
++3.3v
 Text HLabel 10000 2000 2    50   Output ~ 0
-+3v3
++3.3v
 Text Notes 7750 5050 0    50   ~ 0
 R = 0.5/I_limit = 0.5/20
 Wire Wire Line

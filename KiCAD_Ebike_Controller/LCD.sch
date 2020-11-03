@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 7
+Sheet 6 7
 Title ""
 Date ""
 Rev ""
@@ -13,4 +13,316 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+$Comp
+L Interface_Expansion:PCF8574 U?
+U 1 1 5FB7F21B
+P 4850 3750
+F 0 "U?" H 4850 4631 50  0000 C CNN
+F 1 "PCF8574" H 4850 4540 50  0000 C CNN
+F 2 "" H 4850 3750 50  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/PCF8574_PCF8574A.pdf" H 4850 3750 50  0001 C CNN
+	1    4850 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 3350 5350 3350
+Wire Wire Line
+	5800 3850 6300 3850
+Wire Wire Line
+	6300 3950 5750 3950
+Wire Wire Line
+	5700 4050 6300 4050
+Wire Wire Line
+	5650 4150 6300 4150
+Wire Wire Line
+	5850 3450 5350 3450
+Wire Wire Line
+	5800 3550 5350 3550
+Wire Wire Line
+	5800 3550 5800 3850
+Wire Wire Line
+	5750 3650 5350 3650
+Wire Wire Line
+	5750 3650 5750 3950
+Wire Wire Line
+	5700 3750 5350 3750
+Wire Wire Line
+	5700 3750 5700 4050
+Wire Wire Line
+	5650 3850 5350 3850
+Wire Wire Line
+	5650 3850 5650 4150
+Wire Wire Line
+	6100 4900 6700 4900
+Wire Wire Line
+	6700 4900 6700 4850
+Wire Wire Line
+	6700 4900 6700 5100
+Connection ~ 6700 4900
+$Comp
+L power:GND #PWR?
+U 1 1 5FB8819C
+P 6700 5100
+F 0 "#PWR?" H 6700 4850 50  0001 C CNN
+F 1 "GND" H 6705 4927 50  0000 C CNN
+F 2 "" H 6700 5100 50  0001 C CNN
+F 3 "" H 6700 5100 50  0001 C CNN
+	1    6700 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 3150 6700 3000
+Wire Wire Line
+	6700 3000 7500 3000
+Text Label 8600 3000 2    50   ~ 0
++3.3v
+Wire Wire Line
+	4350 3650 4150 3650
+Wire Wire Line
+	4150 3650 4150 3750
+Wire Wire Line
+	4150 3850 4350 3850
+Wire Wire Line
+	4350 3750 4150 3750
+Connection ~ 4150 3750
+Wire Wire Line
+	4150 3750 4150 3850
+Wire Wire Line
+	4150 3850 4150 4650
+Wire Wire Line
+	4150 4650 4850 4650
+Wire Wire Line
+	4850 4650 4850 4450
+Connection ~ 4150 3850
+Wire Wire Line
+	4850 4650 4850 4850
+Connection ~ 4850 4650
+Entry Wire Line
+	3350 3350 3450 3450
+Entry Wire Line
+	3350 3250 3450 3350
+Wire Bus Line
+	3350 3350 3350 3250
+Wire Bus Line
+	3350 3250 2350 3250
+Wire Wire Line
+	3450 3350 4350 3350
+Wire Wire Line
+	4350 3450 3450 3450
+Wire Wire Line
+	6700 3000 4850 3000
+Wire Wire Line
+	4850 3000 4850 3050
+Connection ~ 6700 3000
+Text Notes 3350 3800 0    50   ~ 0
+I2C ADDR = 0x20
+Text HLabel 2350 3250 0    50   Input ~ 0
+LCD_I2C
+Text Label 2650 3250 0    50   ~ 0
+LCD_I2C_[1..2]
+Text Label 3750 3350 0    50   ~ 0
+LCD_I2C_1
+Text Label 3750 3450 0    50   ~ 0
+LCD_I2C_2
+Text HLabel 1950 1150 0    50   Input ~ 0
++3.3v
+Text HLabel 1950 1650 0    50   Input ~ 0
+GND
+Wire Wire Line
+	1950 1150 2250 1150
+Wire Wire Line
+	2250 1150 2250 1300
+Wire Wire Line
+	1950 1650 2250 1650
+Wire Wire Line
+	2250 1650 2250 1500
+$Comp
+L Device:C_Small C?
+U 1 1 5FB9BA0E
+P 2250 1400
+F 0 "C?" H 2342 1446 50  0000 L CNN
+F 1 "100n" H 2342 1355 50  0000 L CNN
+F 2 "" H 2250 1400 50  0001 C CNN
+F 3 "~" H 2250 1400 50  0001 C CNN
+	1    2250 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 1150 2650 1150
+Connection ~ 2250 1150
+Text Label 3050 1150 2    50   ~ 0
++3.3v
+Wire Wire Line
+	2250 1650 2650 1650
+Wire Wire Line
+	3000 1650 3000 1800
+Connection ~ 2250 1650
+$Comp
+L power:GND #PWR?
+U 1 1 5FB8C650
+P 4850 4850
+F 0 "#PWR?" H 4850 4600 50  0001 C CNN
+F 1 "GND" H 4855 4677 50  0000 C CNN
+F 2 "" H 4850 4850 50  0001 C CNN
+F 3 "" H 4850 4850 50  0001 C CNN
+	1    4850 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FB9EEFA
+P 3000 1800
+F 0 "#PWR?" H 3000 1550 50  0001 C CNN
+F 1 "GND" H 3005 1627 50  0000 C CNN
+F 2 "" H 3000 1800 50  0001 C CNN
+F 3 "" H 3000 1800 50  0001 C CNN
+	1    3000 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5F9C9800
+P 7500 3200
+F 0 "R?" H 7559 3246 50  0000 L CNN
+F 1 "50k" H 7559 3155 50  0000 L CNN
+F 2 "" H 7500 3200 50  0001 C CNN
+F 3 "~" H 7500 3200 50  0001 C CNN
+	1    7500 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5F9C9C39
+P 7500 3500
+F 0 "R?" H 7559 3546 50  0000 L CNN
+F 1 "50k" H 7559 3455 50  0000 L CNN
+F 2 "" H 7500 3500 50  0001 C CNN
+F 3 "~" H 7500 3500 50  0001 C CNN
+	1    7500 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 3350 7500 3350
+Wire Wire Line
+	7500 3350 7500 3300
+Wire Wire Line
+	7500 3350 7500 3400
+Connection ~ 7500 3350
+Wire Wire Line
+	7500 3100 7500 3000
+Connection ~ 7500 3000
+Wire Wire Line
+	7500 3000 7950 3000
+Wire Wire Line
+	7500 4850 6700 4850
+Connection ~ 6700 4850
+Wire Wire Line
+	6700 4850 6700 4750
+$Comp
+L Display_Character:HY1602E DS?
+U 1 1 5F9D0095
+P 6700 3950
+F 0 "DS?" H 7150 3400 50  0000 C CNN
+F 1 "HY1602E" H 7250 3300 50  0000 C CNN
+F 2 "Display:HY1602E" H 6700 3050 50  0001 C CIN
+F 3 "http://www.icbank.com/data/ICBShop/board/HY1602E.pdf" H 6900 4050 50  0001 C CNN
+	1    6700 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 3650 5850 3650
+Wire Wire Line
+	5850 3450 5850 3650
+Wire Wire Line
+	6100 3550 6100 4900
+Wire Wire Line
+	6100 3550 6300 3550
+$Comp
+L Transistor_BJT:2N2219 Q?
+U 1 1 5F9D5255
+P 8050 4450
+F 0 "Q?" H 8241 4496 50  0000 L CNN
+F 1 "2N2219" H 8241 4405 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-39-3" H 8250 4375 50  0001 L CIN
+F 3 "http://www.onsemi.com/pub_link/Collateral/2N2219-D.PDF" H 8050 4450 50  0001 L CNN
+	1    8050 4450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5F9D7B2B
+P 7950 3250
+F 0 "R?" H 8009 3296 50  0000 L CNN
+F 1 "220" H 8009 3205 50  0000 L CNN
+F 2 "" H 7950 3250 50  0001 C CNN
+F 3 "~" H 7950 3250 50  0001 C CNN
+	1    7950 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 3150 7950 3000
+Wire Wire Line
+	8250 4450 8500 4450
+Wire Wire Line
+	5350 3950 5600 3950
+Wire Wire Line
+	5600 3950 5600 5450
+Wire Wire Line
+	5600 5450 8500 5450
+$Comp
+L Device:R_Small R?
+U 1 1 5F9DE56C
+P 8500 4650
+F 0 "R?" H 8559 4696 50  0000 L CNN
+F 1 "10k" H 8559 4605 50  0000 L CNN
+F 2 "" H 8500 4650 50  0001 C CNN
+F 3 "~" H 8500 4650 50  0001 C CNN
+	1    8500 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8500 4750 8500 5450
+Wire Wire Line
+	8500 4550 8500 4450
+Wire Wire Line
+	7950 3350 7950 3950
+Wire Wire Line
+	7950 3950 7100 3950
+Wire Wire Line
+	7500 3600 7500 4850
+Wire Wire Line
+	7100 4050 7950 4050
+Wire Wire Line
+	7950 4050 7950 4250
+Wire Wire Line
+	7950 4850 7500 4850
+Wire Wire Line
+	7950 4650 7950 4850
+Connection ~ 7500 4850
+Connection ~ 7950 3000
+Wire Wire Line
+	7950 3000 8600 3000
+$Comp
+L Device:C_Small C?
+U 1 1 5F9F30E4
+P 2650 1400
+F 0 "C?" H 2742 1446 50  0000 L CNN
+F 1 "100n" H 2742 1355 50  0000 L CNN
+F 2 "" H 2650 1400 50  0001 C CNN
+F 3 "~" H 2650 1400 50  0001 C CNN
+	1    2650 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 1500 2650 1650
+Connection ~ 2650 1650
+Wire Wire Line
+	2650 1650 3000 1650
+Wire Wire Line
+	2650 1300 2650 1150
+Connection ~ 2650 1150
+Wire Wire Line
+	2650 1150 3050 1150
+Text Notes 3100 1400 0    50   ~ 0
+Decoupling caps place close to ICs
 $EndSCHEMATC

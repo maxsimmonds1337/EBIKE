@@ -13,66 +13,209 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L Device:R_Small R?
-U 1 1 5FA0C8B2
-P 4250 3200
-F 0 "R?" H 4309 3246 50  0000 L CNN
-F 1 "R_Small" H 4309 3155 50  0000 L CNN
-F 2 "" H 4250 3200 50  0001 C CNN
-F 3 "~" H 4250 3200 50  0001 C CNN
-	1    4250 3200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R?
-U 1 1 5FA0CBBA
-P 4250 3700
-F 0 "R?" H 4309 3746 50  0000 L CNN
-F 1 "R_Small" H 4309 3655 50  0000 L CNN
-F 2 "" H 4250 3700 50  0001 C CNN
-F 3 "~" H 4250 3700 50  0001 C CNN
-	1    4250 3700
-	1    0    0    -1  
-$EndComp
+Text HLabel 5600 4000 2    50   Input ~ 0
+V_BATT_MON_PA0
 Wire Wire Line
-	4250 3300 4250 3450
+	5000 4000 5400 4000
 Wire Wire Line
-	4250 3800 4250 4000
-Text HLabel 4250 4100 3    50   Input ~ 0
-GND
+	5000 4000 5000 4150
 Wire Wire Line
-	4250 2600 4250 3100
-Text HLabel 4250 2600 1    50   Input ~ 0
-VBatt
+	4550 4000 4550 4150
+Connection ~ 5000 4000
+Wire Wire Line
+	5000 4000 4550 4000
+Wire Wire Line
+	5000 4550 4550 4550
+Wire Wire Line
+	5000 4350 5000 4550
 $Comp
 L Device:C_Small C?
 U 1 1 5FA0D6A7
-P 4900 3700
-F 0 "C?" H 4992 3746 50  0000 L CNN
-F 1 "C_Small" H 4992 3655 50  0000 L CNN
-F 2 "" H 4900 3700 50  0001 C CNN
-F 3 "~" H 4900 3700 50  0001 C CNN
-	1    4900 3700
+P 5000 4250
+AR Path="/5FA09684/5FA0D6A7" Ref="C?"  Part="1" 
+AR Path="/5FA215E4/5FA0D6A7" Ref="C?"  Part="1" 
+F 0 "C?" H 5092 4296 50  0000 L CNN
+F 1 "50n" H 5092 4205 50  0000 L CNN
+F 2 "" H 5000 4250 50  0001 C CNN
+F 3 "~" H 5000 4250 50  0001 C CNN
+	1    5000 4250
+	1    0    0    -1  
+$EndComp
+Text HLabel 4550 3400 1    50   Input ~ 0
+VBatt
+Wire Wire Line
+	4550 3400 4550 3650
+Text HLabel 7850 4800 3    50   Input ~ 0
+GND
+Connection ~ 4550 4550
+Wire Wire Line
+	4550 4350 4550 4550
+Connection ~ 4550 4000
+Wire Wire Line
+	4550 3850 4550 4000
+$Comp
+L Device:R_Small R?
+U 1 1 5FA0CBBA
+P 4550 4250
+AR Path="/5FA09684/5FA0CBBA" Ref="R?"  Part="1" 
+AR Path="/5FA215E4/5FA0CBBA" Ref="R?"  Part="1" 
+F 0 "R?" H 4609 4296 50  0000 L CNN
+F 1 "10k" H 4609 4205 50  0000 L CNN
+F 2 "" H 4550 4250 50  0001 C CNN
+F 3 "~" H 4550 4250 50  0001 C CNN
+	1    4550 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5FA0C8B2
+P 4550 3750
+AR Path="/5FA09684/5FA0C8B2" Ref="R?"  Part="1" 
+AR Path="/5FA215E4/5FA0C8B2" Ref="R?"  Part="1" 
+F 0 "R?" H 4609 3796 50  0000 L CNN
+F 1 "180k" H 4609 3705 50  0000 L CNN
+F 2 "" H 4550 3750 50  0001 C CNN
+F 3 "~" H 4550 3750 50  0001 C CNN
+	1    4550 3750
+	1    0    0    -1  
+$EndComp
+Text HLabel 6700 3200 0    50   Input ~ 0
+LSS
+Text HLabel 8300 2800 1    50   Input ~ 0
++3V3
+Text HLabel 9300 3300 2    50   Input ~ 0
+I_BATT_MON_PA1
+Wire Wire Line
+	4550 4550 4550 4750
+Text Notes 7150 5350 0    50   ~ 0
+fc = 330Hz (about 2 decades below the switching frequency (20KHz)\nAv = 6.1, hence worst case Vin = 0.5R * 25A * 6.1 V/V = 3.1V
+Wire Wire Line
+	7850 3400 8100 3400
+$Comp
+L Amplifier_Operational:MCP6V61U U?
+U 1 1 5F9A8CBA
+P 8100 3200
+AR Path="/5FA09684/5F9A8CBA" Ref="U?"  Part="1" 
+AR Path="/5FA215E4/5F9A8CBA" Ref="U?"  Part="1" 
+F 0 "U?" H 8500 2950 50  0000 L CNN
+F 1 "MCP6V61U" H 8500 2850 50  0000 L CNN
+F 2 "" H 8000 2450 50  0001 C CNN
+F 3 "" H 8000 2450 50  0001 C CNN
+	1    8100 3200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4900 3800 4900 4000
+	8700 3300 8950 3300
+$Comp
+L Device:C_Small C?
+U 1 1 5F9EC77C
+P 7450 3400
+AR Path="/5FA09684/5F9EC77C" Ref="C?"  Part="1" 
+AR Path="/5FA215E4/5F9EC77C" Ref="C?"  Part="1" 
+F 0 "C?" V 7650 3350 50  0000 C CNN
+F 1 "50n" V 7550 3350 50  0000 C CNN
+F 2 "" H 7450 3400 50  0001 C CNN
+F 3 "~" H 7450 3400 50  0001 C CNN
+	1    7450 3400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5F9EFB76
+P 7850 4450
+AR Path="/5FA09684/5F9EFB76" Ref="R?"  Part="1" 
+AR Path="/5FA215E4/5F9EFB76" Ref="R?"  Part="1" 
+F 0 "R?" H 7791 4404 50  0000 R CNN
+F 1 "9.1k" H 7791 4495 50  0000 R CNN
+F 2 "" H 7850 4450 50  0001 C CNN
+F 3 "~" H 7850 4450 50  0001 C CNN
+	1    7850 4450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5F9F022F
+P 8300 4100
+AR Path="/5FA09684/5F9F022F" Ref="R?"  Part="1" 
+AR Path="/5FA215E4/5F9F022F" Ref="R?"  Part="1" 
+F 0 "R?" V 8500 4100 50  0000 C CNN
+F 1 "47k" V 8400 4100 50  0000 C CNN
+F 2 "" H 8300 4100 50  0001 C CNN
+F 3 "~" H 8300 4100 50  0001 C CNN
+	1    8300 4100
+	0    1    1    0   
+$EndComp
 Wire Wire Line
-	4900 4000 4250 4000
-Connection ~ 4250 4000
+	6700 3200 6800 3200
+$Comp
+L Device:R_Small R?
+U 1 1 5F9FB5C2
+P 6900 3200
+AR Path="/5FA09684/5F9FB5C2" Ref="R?"  Part="1" 
+AR Path="/5FA215E4/5F9FB5C2" Ref="R?"  Part="1" 
+F 0 "R?" V 7096 3200 50  0000 C CNN
+F 1 "8.2k" V 7005 3200 50  0000 C CNN
+F 2 "" H 6900 3200 50  0001 C CNN
+F 3 "~" H 6900 3200 50  0001 C CNN
+	1    6900 3200
+	0    -1   -1   0   
+$EndComp
 Wire Wire Line
-	4250 4000 4250 4100
+	7000 3200 7450 3200
 Wire Wire Line
-	4900 3450 4250 3450
-Connection ~ 4250 3450
+	7450 3300 7450 3200
+Connection ~ 7450 3200
 Wire Wire Line
-	4250 3450 4250 3600
+	7450 3200 8100 3200
 Wire Wire Line
-	4900 3450 4900 3600
+	8400 4100 8950 4100
 Wire Wire Line
-	4900 3450 5550 3450
-Connection ~ 4900 3450
-Text HLabel 5550 3450 2    50   Input ~ 0
-V_BATT_MON_PA0
+	8950 4100 8950 3300
+Connection ~ 8950 3300
+Wire Wire Line
+	8950 3300 9300 3300
+Wire Wire Line
+	8200 4100 7850 4100
+Wire Wire Line
+	7850 4100 7850 3400
+Wire Wire Line
+	7850 4100 7850 4350
+Connection ~ 7850 4100
+Wire Wire Line
+	7850 4800 7850 4550
+Text Notes 3750 5350 0    50   ~ 0
+fc = 330Hz (about 2 decades below the switching frequency (20KHz)\nAv = 18.3, hence worst case Vin = 55, then Vout = 3V
+Wire Wire Line
+	8300 2800 8300 3000
+Text HLabel 8300 3750 3    50   Input ~ 0
+GND
+Text HLabel 7450 3750 3    50   Input ~ 0
+GND
+Wire Wire Line
+	7450 3500 7450 3750
+Wire Wire Line
+	8300 3600 8300 3750
+Text HLabel 4550 4750 3    50   Input ~ 0
+GND
+$Comp
+L Device:D_Zener_Small D?
+U 1 1 5FA37BFA
+P 5400 4250
+F 0 "D?" V 5354 4318 50  0000 L CNN
+F 1 "D_Zener_Small" V 5445 4318 50  0000 L CNN
+F 2 "" V 5400 4250 50  0001 C CNN
+F 3 "~" V 5400 4250 50  0001 C CNN
+	1    5400 4250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5400 4150 5400 4000
+Connection ~ 5400 4000
+Wire Wire Line
+	5400 4000 5600 4000
+Wire Wire Line
+	5400 4350 5400 4550
+Wire Wire Line
+	5400 4550 5000 4550
+Connection ~ 5000 4550
 $EndSCHEMATC
