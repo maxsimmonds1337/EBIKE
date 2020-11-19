@@ -15,19 +15,6 @@ Comment4 ""
 $EndDescr
 Text Notes 3150 2200 0    50   ~ 0
 For overvotlage protection
-$Comp
-L power:GND #PWR?
-U 1 1 5F9401C2
-P 3150 2650
-AR Path="/5F9401C2" Ref="#PWR?"  Part="1" 
-AR Path="/5F8D3A83/5F9401C2" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 3150 2400 50  0001 C CNN
-F 1 "GND" H 3155 2477 50  0000 C CNN
-F 2 "" H 3150 2650 50  0001 C CNN
-F 3 "" H 3150 2650 50  0001 C CNN
-	1    3150 2650
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7200 2600 7350 2600
 Wire Wire Line
@@ -623,8 +610,6 @@ Wire Wire Line
 	3150 2350 3150 2300
 Connection ~ 3150 2300
 Wire Wire Line
-	3150 2550 3150 2650
-Wire Wire Line
 	3150 2300 3900 2300
 $Comp
 L Device:C_Small C?
@@ -792,10 +777,15 @@ F 3 "" H 3850 5150 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3850 4900 3850 5150
+Wire Wire Line
+	3900 2700 3150 2700
+Wire Wire Line
+	3150 2550 3150 2700
 Wire Bus Line
 	9500 3200 9500 3400
 Wire Bus Line
 	9500 3750 9500 3950
 Wire Bus Line
 	9550 4250 9550 4450
+Connection ~ 3900 2700
 $EndSCHEMATC
