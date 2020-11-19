@@ -184,7 +184,7 @@ Connection ~ 7850 4100
 Wire Wire Line
 	7850 4800 7850 4550
 Text Notes 3750 5350 0    50   ~ 0
-fc = 330Hz (about 2 decades below the switching frequency (20KHz)\nAv = 18.3, hence worst case Vin = 55, then Vout = 3V
+fc = 330Hz (about 2 decades below the switching frequency (20KHz)\nAv = 18.3, hence worst case Vin = 55, then Vout = 3V\nEquivilent resistance is 9.5K, so no need for buffer amp
 Wire Wire Line
 	8300 2800 8300 3000
 Text HLabel 8300 3750 3    50   Input ~ 0

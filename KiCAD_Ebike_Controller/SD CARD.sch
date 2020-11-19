@@ -75,17 +75,6 @@ SPI1_MOSI
 Entry Wire Line
 	3050 3300 3150 3400
 $Comp
-L power:+3.3V #PWR?
-U 1 1 5FAF998F
-P 5250 2750
-F 0 "#PWR?" H 5250 2600 50  0001 C CNN
-F 1 "+3.3V" H 5265 2923 50  0000 C CNN
-F 2 "" H 5250 2750 50  0001 C CNN
-F 3 "" H 5250 2750 50  0001 C CNN
-	1    5250 2750
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR?
 U 1 1 5FAF9C96
 P 5250 4500
@@ -176,8 +165,10 @@ Wire Wire Line
 	4500 3300 5400 3300
 Wire Wire Line
 	5400 3400 5100 3400
+Text Label 2950 1350 0    50   ~ 0
++3.3v
 Wire Bus Line
 	3050 3100 3050 3700
-Text Label 2950 1350 0    50   ~ 0
+Text Label 5250 2750 0    50   ~ 0
 +3.3v
 $EndSCHEMATC

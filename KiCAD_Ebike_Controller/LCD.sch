@@ -98,15 +98,15 @@ Wire Wire Line
 	4850 4650 4850 4850
 Connection ~ 4850 4650
 Entry Wire Line
-	3350 3350 3450 3450
+	2100 3350 2200 3450
 Entry Wire Line
-	3350 3250 3450 3350
+	2100 3250 2200 3350
 Wire Bus Line
-	3350 3350 3350 3250
+	2100 3350 2100 3250
 Wire Bus Line
-	3350 3250 2350 3250
+	2100 3250 1100 3250
 Wire Wire Line
-	3450 3350 4350 3350
+	2200 3350 2800 3350
 Wire Wire Line
 	4350 3450 3450 3450
 Wire Wire Line
@@ -116,9 +116,9 @@ Wire Wire Line
 Connection ~ 6700 3000
 Text Notes 3350 3800 0    50   ~ 0
 I2C ADDR = 0x20
-Text HLabel 2350 3250 0    50   Input ~ 0
+Text HLabel 1100 3250 0    50   Input ~ 0
 LCD_I2C
-Text Label 2650 3250 0    50   ~ 0
+Text Label 1400 3250 0    50   ~ 0
 LCD_I2C_[1..2]
 Text Label 3750 3350 0    50   ~ 0
 LCD_I2C_1
@@ -325,4 +325,109 @@ Wire Wire Line
 	2650 1150 3050 1150
 Text Notes 3100 1400 0    50   ~ 0
 Decoupling caps place close to ICs
+$Comp
+L Transistor_BJT:BCV62 Q?
+U 1 1 5FA332E6
+P 2600 2500
+F 0 "Q?" H 2050 2550 50  0000 L CNN
+F 1 "BCV62" H 2050 2450 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-143" H 2600 2500 50  0001 C CIN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BCV62.pdf" H 2500 2500 50  0001 L CNN
+	1    2600 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:BCV62 Q?
+U 1 1 5FA33AEC
+P 3250 2500
+F 0 "Q?" H 3538 2546 50  0000 L CNN
+F 1 "BCV62" H 3538 2455 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-143" H 3250 2500 50  0001 C CIN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BCV62.pdf" H 3150 2500 50  0001 L CNN
+	1    3250 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5FA49804
+P 2400 2900
+F 0 "R?" H 2459 2946 50  0000 L CNN
+F 1 "R_Small" H 2459 2855 50  0000 L CNN
+F 2 "" H 2400 2900 50  0001 C CNN
+F 3 "~" H 2400 2900 50  0001 C CNN
+	1    2400 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5FA49B10
+P 3050 2900
+F 0 "R?" H 3109 2946 50  0000 L CNN
+F 1 "R_Small" H 3109 2855 50  0000 L CNN
+F 2 "" H 3050 2900 50  0001 C CNN
+F 3 "~" H 3050 2900 50  0001 C CNN
+	1    3050 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 2700 2800 3350
+Connection ~ 2800 3350
+Wire Wire Line
+	2800 3350 4350 3350
+Wire Wire Line
+	3450 2700 3450 3450
+Connection ~ 3450 3450
+Wire Wire Line
+	3450 3450 2200 3450
+$Comp
+L power:GND #PWR?
+U 1 1 5FA4F5F7
+P 2400 3100
+F 0 "#PWR?" H 2400 2850 50  0001 C CNN
+F 1 "GND" H 2405 2927 50  0000 C CNN
+F 2 "" H 2400 3100 50  0001 C CNN
+F 3 "" H 2400 3100 50  0001 C CNN
+	1    2400 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FA5155C
+P 3050 3100
+F 0 "#PWR?" H 3050 2850 50  0001 C CNN
+F 1 "GND" H 3055 2927 50  0000 C CNN
+F 2 "" H 3050 3100 50  0001 C CNN
+F 3 "" H 3050 3100 50  0001 C CNN
+	1    3050 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 2700 3050 2800
+Wire Wire Line
+	2400 2700 2400 2800
+Wire Wire Line
+	2400 3000 2400 3100
+Wire Wire Line
+	3050 3000 3050 3100
+Wire Wire Line
+	2400 2300 2400 2150
+Wire Wire Line
+	2400 2150 2800 2150
+Wire Wire Line
+	3450 2150 3450 2300
+Wire Wire Line
+	3050 2300 3050 2150
+Connection ~ 3050 2150
+Wire Wire Line
+	3050 2150 3450 2150
+Wire Wire Line
+	2800 2300 2800 2150
+Connection ~ 2800 2150
+Wire Wire Line
+	2800 2150 3050 2150
+Wire Wire Line
+	3450 2150 3750 2150
+Connection ~ 3450 2150
+Text Label 3750 2150 2    50   ~ 0
++3.3v
 $EndSCHEMATC

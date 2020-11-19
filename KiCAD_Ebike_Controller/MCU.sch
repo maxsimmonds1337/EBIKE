@@ -57,14 +57,6 @@ Text Notes 6200 3100 0    50   ~ 0
 ADC_IN1
 Wire Wire Line
 	6100 3100 7850 3100
-Text Notes 6200 3200 0    50   ~ 0
-ADC_IN2
-Wire Wire Line
-	6100 3200 7850 3200
-Wire Wire Line
-	6100 3300 7850 3300
-Text Notes 6200 3300 0    50   ~ 0
-ADC_IN3
 Text Notes 6200 3600 0    50   ~ 0
 SPI1_MISO
 Text Notes 6200 3700 0    50   ~ 0
@@ -151,10 +143,8 @@ Text HLabel 7850 3000 2    50   Input ~ 0
 V_BATT_MON_PA0
 Text HLabel 7850 3100 2    50   Input ~ 0
 I_BATT_MON_PA1
-Text HLabel 7850 3200 2    50   Input ~ 0
-THROTTLE_PA2
-Text HLabel 7850 3300 2    50   Input ~ 0
-AMB_LIGHT_PA3
+Text HLabel 7850 3800 2    50   Input ~ 0
+MODE2_SW_PA3
 Text HLabel 7850 3500 2    50   Input ~ 0
 SD_SPI
 Text HLabel 7850 3900 2    50   Input ~ 0
@@ -210,29 +200,25 @@ LCD_I2C_[1..2]
 Wire Wire Line
 	7850 4500 6100 4500
 Wire Wire Line
-	5000 4000 3000 4000
-Wire Wire Line
-	5000 4100 3300 4100
+	5000 4100 3450 4100
 Text HLabel 2550 3900 0    50   Input ~ 0
 HALL_A_PB0
 Text HLabel 2550 4000 0    50   Input ~ 0
 HALL_B_PB1
 Text HLabel 2550 4100 0    50   Input ~ 0
-HALL_C_PB2
+HALL_C_PB3
 Text HLabel 2550 4200 0    50   Output ~ 0
-nBRAKE_PA13
+nBRAKE_PB4
 Text HLabel 2550 4300 0    50   Input ~ 0
-nFAULT_PA14
+nFAULT_PB5
 Wire Wire Line
 	5000 4200 2550 4200
 Wire Wire Line
-	2550 4300 5000 4300
-Wire Wire Line
 	6100 4300 7850 4300
 Text HLabel 7850 4300 2    50   Output ~ 0
-SWDIO
+SWDIO_PA13
 Text HLabel 7850 4400 2    50   Output ~ 0
-SWCLK
+SWCLK_PA14
 Wire Wire Line
 	6100 4400 7850 4400
 Wire Wire Line
@@ -371,7 +357,7 @@ Wire Wire Line
 	2700 3800 2700 3900
 Connection ~ 2700 3900
 Wire Wire Line
-	2700 3900 5000 3900
+	2700 3900 2800 3900
 Wire Wire Line
 	3000 3800 3000 4000
 Connection ~ 3000 4000
@@ -468,10 +454,105 @@ Wire Wire Line
 Connection ~ 2700 3450
 Wire Wire Line
 	5000 4500 2550 4500
+Text HLabel 2550 4500 0    50   Input ~ 0
+MODE1_SW_PB7
+Text Notes 6200 3200 0    50   ~ 0
+ADC_IN2
+Text HLabel 7850 3200 2    50   Input ~ 0
+THROTTLE_PA2
+Wire Wire Line
+	6100 3200 7850 3200
+Wire Wire Line
+	7100 3800 7100 3850
+Wire Wire Line
+	7100 3850 7200 3850
+Wire Wire Line
+	7200 3850 7200 3800
+Wire Wire Line
+	6100 3800 7100 3800
+Wire Wire Line
+	7200 3800 7850 3800
+$Comp
+L Device:C_Small C?
+U 1 1 5FCC672D
+P 2800 4750
+F 0 "C?" H 2892 4796 50  0000 L CNN
+F 1 "100n" H 2892 4705 50  0000 L CNN
+F 2 "" H 2800 4750 50  0001 C CNN
+F 3 "~" H 2800 4750 50  0001 C CNN
+	1    2800 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5FCC6C62
+P 3100 4750
+F 0 "C?" H 3192 4796 50  0000 L CNN
+F 1 "100n" H 3192 4705 50  0000 L CNN
+F 2 "" H 3100 4750 50  0001 C CNN
+F 3 "~" H 3100 4750 50  0001 C CNN
+	1    3100 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5FCC70C3
+P 3450 4750
+F 0 "C?" H 3542 4796 50  0000 L CNN
+F 1 "100n" H 3542 4705 50  0000 L CNN
+F 2 "" H 3450 4750 50  0001 C CNN
+F 3 "~" H 3450 4750 50  0001 C CNN
+	1    3450 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 4300 5000 4300
+Wire Wire Line
+	2800 4650 2800 3900
+Connection ~ 2800 3900
+Wire Wire Line
+	2800 3900 5000 3900
+Wire Wire Line
+	3100 4650 3100 4000
+Wire Wire Line
+	3000 4000 3100 4000
+Connection ~ 3100 4000
+Wire Wire Line
+	3100 4000 5000 4000
+Wire Wire Line
+	3450 4100 3450 4650
+Connection ~ 3450 4100
+Wire Wire Line
+	3450 4100 3300 4100
+Wire Wire Line
+	2800 4850 2800 5000
+Wire Wire Line
+	2800 5000 3100 5000
+Wire Wire Line
+	3450 5000 3450 4850
+Wire Wire Line
+	3100 4850 3100 5000
+Connection ~ 3100 5000
+$Comp
+L power:GND #PWR?
+U 1 1 5FCE6083
+P 3200 5150
+F 0 "#PWR?" H 3200 4900 50  0001 C CNN
+F 1 "GND" H 3205 4977 50  0000 C CNN
+F 2 "" H 3200 5150 50  0001 C CNN
+F 3 "" H 3200 5150 50  0001 C CNN
+	1    3200 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 5000 3200 5000
+Wire Wire Line
+	3200 5150 3200 5000
+Connection ~ 3200 5000
+Wire Wire Line
+	3200 5000 3450 5000
 Wire Bus Line
 	7200 3900 7200 4100
 Wire Bus Line
 	7150 3500 7150 3800
-Text HLabel 2550 4500 0    50   Input ~ 0
-MODE_SW_PB7
 $EndSCHEMATC
