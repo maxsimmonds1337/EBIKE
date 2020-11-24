@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 7
+Sheet 5 7
 Title ""
 Date ""
 Rev ""
@@ -14,10 +14,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Interface_Expansion:PCF8574 U?
+L Interface_Expansion:PCF8574 U3
 U 1 1 5FB7F21B
 P 4850 3750
-F 0 "U?" H 4850 4631 50  0000 C CNN
+F 0 "U3" H 4850 4631 50  0000 C CNN
 F 1 "PCF8574" H 4850 4540 50  0000 C CNN
 F 2 "" H 4850 3750 50  0001 C CNN
 F 3 "http://www.nxp.com/documents/data_sheet/PCF8574_PCF8574A.pdf" H 4850 3750 50  0001 C CNN
@@ -60,10 +60,10 @@ Wire Wire Line
 	6700 4900 6700 5100
 Connection ~ 6700 4900
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0123
 U 1 1 5FB8819C
 P 6700 5100
-F 0 "#PWR?" H 6700 4850 50  0001 C CNN
+F 0 "#PWR0123" H 6700 4850 50  0001 C CNN
 F 1 "GND" H 6705 4927 50  0000 C CNN
 F 2 "" H 6700 5100 50  0001 C CNN
 F 3 "" H 6700 5100 50  0001 C CNN
@@ -137,12 +137,12 @@ Wire Wire Line
 Wire Wire Line
 	2250 1650 2250 1500
 $Comp
-L Device:C_Small C?
+L Device:C_Small C24
 U 1 1 5FB9BA0E
 P 2250 1400
-F 0 "C?" H 2342 1446 50  0000 L CNN
+F 0 "C24" H 2342 1446 50  0000 L CNN
 F 1 "100n" H 2342 1355 50  0000 L CNN
-F 2 "" H 2250 1400 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2250 1400 50  0001 C CNN
 F 3 "~" H 2250 1400 50  0001 C CNN
 	1    2250 1400
 	1    0    0    -1  
@@ -158,10 +158,10 @@ Wire Wire Line
 	3000 1650 3000 1800
 Connection ~ 2250 1650
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0124
 U 1 1 5FB8C650
 P 4850 4850
-F 0 "#PWR?" H 4850 4600 50  0001 C CNN
+F 0 "#PWR0124" H 4850 4600 50  0001 C CNN
 F 1 "GND" H 4855 4677 50  0000 C CNN
 F 2 "" H 4850 4850 50  0001 C CNN
 F 3 "" H 4850 4850 50  0001 C CNN
@@ -169,10 +169,10 @@ F 3 "" H 4850 4850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0125
 U 1 1 5FB9EEFA
 P 3000 1800
-F 0 "#PWR?" H 3000 1550 50  0001 C CNN
+F 0 "#PWR0125" H 3000 1550 50  0001 C CNN
 F 1 "GND" H 3005 1627 50  0000 C CNN
 F 2 "" H 3000 1800 50  0001 C CNN
 F 3 "" H 3000 1800 50  0001 C CNN
@@ -180,10 +180,10 @@ F 3 "" H 3000 1800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R?
+L Device:R_Small R32
 U 1 1 5F9C9800
 P 7500 3200
-F 0 "R?" H 7559 3246 50  0000 L CNN
+F 0 "R32" H 7559 3246 50  0000 L CNN
 F 1 "50k" H 7559 3155 50  0000 L CNN
 F 2 "" H 7500 3200 50  0001 C CNN
 F 3 "~" H 7500 3200 50  0001 C CNN
@@ -191,10 +191,10 @@ F 3 "~" H 7500 3200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R?
+L Device:R_Small R33
 U 1 1 5F9C9C39
 P 7500 3500
-F 0 "R?" H 7559 3546 50  0000 L CNN
+F 0 "R33" H 7559 3546 50  0000 L CNN
 F 1 "50k" H 7559 3455 50  0000 L CNN
 F 2 "" H 7500 3500 50  0001 C CNN
 F 3 "~" H 7500 3500 50  0001 C CNN
@@ -219,10 +219,10 @@ Connection ~ 6700 4850
 Wire Wire Line
 	6700 4850 6700 4750
 $Comp
-L Display_Character:HY1602E DS?
+L Display_Character:HY1602E DS1
 U 1 1 5F9D0095
 P 6700 3950
-F 0 "DS?" H 7150 3400 50  0000 C CNN
+F 0 "DS1" H 7150 3400 50  0000 C CNN
 F 1 "HY1602E" H 7250 3300 50  0000 C CNN
 F 2 "Display:HY1602E" H 6700 3050 50  0001 C CIN
 F 3 "http://www.icbank.com/data/ICBShop/board/HY1602E.pdf" H 6900 4050 50  0001 C CNN
@@ -238,10 +238,10 @@ Wire Wire Line
 Wire Wire Line
 	6100 3550 6300 3550
 $Comp
-L Transistor_BJT:2N2219 Q?
+L Transistor_BJT:2N2219 Q9
 U 1 1 5F9D5255
 P 8050 4450
-F 0 "Q?" H 8241 4496 50  0000 L CNN
+F 0 "Q9" H 8241 4496 50  0000 L CNN
 F 1 "2N2219" H 8241 4405 50  0000 L CNN
 F 2 "Package_TO_SOT_THT:TO-39-3" H 8250 4375 50  0001 L CIN
 F 3 "http://www.onsemi.com/pub_link/Collateral/2N2219-D.PDF" H 8050 4450 50  0001 L CNN
@@ -249,10 +249,10 @@ F 3 "http://www.onsemi.com/pub_link/Collateral/2N2219-D.PDF" H 8050 4450 50  000
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R?
+L Device:R_Small R34
 U 1 1 5F9D7B2B
 P 7950 3250
-F 0 "R?" H 8009 3296 50  0000 L CNN
+F 0 "R34" H 8009 3296 50  0000 L CNN
 F 1 "220" H 8009 3205 50  0000 L CNN
 F 2 "" H 7950 3250 50  0001 C CNN
 F 3 "~" H 7950 3250 50  0001 C CNN
@@ -270,10 +270,10 @@ Wire Wire Line
 Wire Wire Line
 	5600 5450 8500 5450
 $Comp
-L Device:R_Small R?
+L Device:R_Small R35
 U 1 1 5F9DE56C
 P 8500 4650
-F 0 "R?" H 8559 4696 50  0000 L CNN
+F 0 "R35" H 8559 4696 50  0000 L CNN
 F 1 "10k" H 8559 4605 50  0000 L CNN
 F 2 "" H 8500 4650 50  0001 C CNN
 F 3 "~" H 8500 4650 50  0001 C CNN
@@ -303,12 +303,12 @@ Connection ~ 7950 3000
 Wire Wire Line
 	7950 3000 8600 3000
 $Comp
-L Device:C_Small C?
+L Device:C_Small C25
 U 1 1 5F9F30E4
 P 2650 1400
-F 0 "C?" H 2742 1446 50  0000 L CNN
+F 0 "C25" H 2742 1446 50  0000 L CNN
 F 1 "100n" H 2742 1355 50  0000 L CNN
-F 2 "" H 2650 1400 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2650 1400 50  0001 C CNN
 F 3 "~" H 2650 1400 50  0001 C CNN
 	1    2650 1400
 	1    0    0    -1  
@@ -326,10 +326,10 @@ Wire Wire Line
 Text Notes 3100 1400 0    50   ~ 0
 Decoupling caps place close to ICs
 $Comp
-L Transistor_BJT:BCV62 Q?
+L Transistor_BJT:BCV62 Q7
 U 1 1 5FA332E6
 P 2600 2500
-F 0 "Q?" H 2050 2550 50  0000 L CNN
+F 0 "Q7" H 2050 2550 50  0000 L CNN
 F 1 "BCV62" H 2050 2450 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-143" H 2600 2500 50  0001 C CIN
 F 3 "https://assets.nexperia.com/documents/data-sheet/BCV62.pdf" H 2500 2500 50  0001 L CNN
@@ -337,10 +337,10 @@ F 3 "https://assets.nexperia.com/documents/data-sheet/BCV62.pdf" H 2500 2500 50 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_BJT:BCV62 Q?
+L Transistor_BJT:BCV62 Q8
 U 1 1 5FA33AEC
 P 3250 2500
-F 0 "Q?" H 3538 2546 50  0000 L CNN
+F 0 "Q8" H 3538 2546 50  0000 L CNN
 F 1 "BCV62" H 3538 2455 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-143" H 3250 2500 50  0001 C CIN
 F 3 "https://assets.nexperia.com/documents/data-sheet/BCV62.pdf" H 3150 2500 50  0001 L CNN
@@ -348,10 +348,10 @@ F 3 "https://assets.nexperia.com/documents/data-sheet/BCV62.pdf" H 3150 2500 50 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R?
+L Device:R_Small R30
 U 1 1 5FA49804
 P 2400 2900
-F 0 "R?" H 2459 2946 50  0000 L CNN
+F 0 "R30" H 2459 2946 50  0000 L CNN
 F 1 "R_Small" H 2459 2855 50  0000 L CNN
 F 2 "" H 2400 2900 50  0001 C CNN
 F 3 "~" H 2400 2900 50  0001 C CNN
@@ -359,10 +359,10 @@ F 3 "~" H 2400 2900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R?
+L Device:R_Small R31
 U 1 1 5FA49B10
 P 3050 2900
-F 0 "R?" H 3109 2946 50  0000 L CNN
+F 0 "R31" H 3109 2946 50  0000 L CNN
 F 1 "R_Small" H 3109 2855 50  0000 L CNN
 F 2 "" H 3050 2900 50  0001 C CNN
 F 3 "~" H 3050 2900 50  0001 C CNN
@@ -380,10 +380,10 @@ Connection ~ 3450 3450
 Wire Wire Line
 	3450 3450 2200 3450
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0126
 U 1 1 5FA4F5F7
 P 2400 3100
-F 0 "#PWR?" H 2400 2850 50  0001 C CNN
+F 0 "#PWR0126" H 2400 2850 50  0001 C CNN
 F 1 "GND" H 2405 2927 50  0000 C CNN
 F 2 "" H 2400 3100 50  0001 C CNN
 F 3 "" H 2400 3100 50  0001 C CNN
@@ -391,10 +391,10 @@ F 3 "" H 2400 3100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0127
 U 1 1 5FA5155C
 P 3050 3100
-F 0 "#PWR?" H 3050 2850 50  0001 C CNN
+F 0 "#PWR0127" H 3050 2850 50  0001 C CNN
 F 1 "GND" H 3055 2927 50  0000 C CNN
 F 2 "" H 3050 3100 50  0001 C CNN
 F 3 "" H 3050 3100 50  0001 C CNN
