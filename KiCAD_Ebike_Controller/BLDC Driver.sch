@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 7
+Sheet 6 7
 Title ""
 Date ""
 Rev ""
@@ -84,10 +84,6 @@ Wire Wire Line
 Wire Wire Line
 	7600 4350 7600 4450
 Wire Wire Line
-	6300 5100 6300 5150
-Wire Wire Line
-	6300 5150 6400 5150
-Wire Wire Line
 	7400 5150 7400 5250
 Wire Wire Line
 	5500 4800 5500 4750
@@ -138,8 +134,6 @@ Wire Wire Line
 	7100 4750 7400 4750
 Wire Wire Line
 	7400 4750 7400 4850
-Wire Wire Line
-	6400 5100 6400 5150
 Wire Wire Line
 	7350 2800 7200 2800
 Wire Wire Line
@@ -813,19 +807,25 @@ $EndComp
 $Comp
 L power:GNDD #PWR0136
 U 1 1 5FE9CEF7
-P 6300 5300
-F 0 "#PWR0136" H 6300 5050 50  0001 C CNN
-F 1 "GNDD" H 6304 5145 50  0000 C CNN
-F 2 "" H 6300 5300 50  0001 C CNN
-F 3 "" H 6300 5300 50  0001 C CNN
-	1    6300 5300
+P 6400 5500
+F 0 "#PWR0136" H 6400 5250 50  0001 C CNN
+F 1 "GNDD" H 6404 5345 50  0000 C CNN
+F 2 "" H 6400 5500 50  0001 C CNN
+F 3 "" H 6400 5500 50  0001 C CNN
+	1    6400 5500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6550 5100 6550 5300
+	6550 5100 6550 5200
 Wire Wire Line
-	6300 5150 6300 5300
-Connection ~ 6300 5150
+	6400 5100 6400 5500
+Wire Wire Line
+	6550 5200 6300 5200
+Wire Wire Line
+	6300 5200 6300 5100
+Connection ~ 6550 5200
+Wire Wire Line
+	6550 5200 6550 5300
 Wire Bus Line
 	9500 3200 9500 3400
 Wire Bus Line

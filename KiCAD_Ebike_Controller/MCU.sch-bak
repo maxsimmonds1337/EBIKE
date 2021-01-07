@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 7
+Sheet 7 7
 Title ""
 Date ""
 Rev ""
@@ -43,12 +43,6 @@ Wire Wire Line
 	5600 4800 5600 4700
 Text HLabel 1600 2300 0    50   Input ~ 0
 GND
-Text HLabel 7850 4500 2    50   Output ~ 0
-PWM_PA15
-Text HLabel 7850 4100 2    50   Output ~ 0
-DIR_PA11
-Text HLabel 7850 4200 2    50   Output ~ 0
-nSLEEP_PA12
 Wire Wire Line
 	6100 3000 7850 3000
 Text Notes 6200 3000 0    50   ~ 0
@@ -63,8 +57,6 @@ Text Notes 6200 3700 0    50   ~ 0
 SPI1_MOSI
 Text Notes 6200 3900 0    50   ~ 0
 I2C1_SCL
-Wire Wire Line
-	7050 3700 6100 3700
 Wire Wire Line
 	6100 3600 7050 3600
 Text Notes 6200 4000 0    50   ~ 0
@@ -114,9 +106,7 @@ I_BATT_MON_PA1
 Text HLabel 7850 3800 2    50   Input ~ 0
 MODE2_SW_PA3
 Text HLabel 7850 3500 2    50   Input ~ 0
-SD_SPI
-Text HLabel 7850 3900 2    50   Input ~ 0
-LCD_I2C
+SD_SPI[1..4]
 Wire Bus Line
 	7150 3500 7850 3500
 Entry Wire Line
@@ -128,45 +118,27 @@ Entry Wire Line
 Entry Wire Line
 	7050 3700 7150 3800
 Text Label 6700 3400 0    50   ~ 0
-SD_SPI_1
+SD_SPI1
 Text Label 6700 3500 0    50   ~ 0
-SD_SPI_2
+SD_SPI2
 Text Label 6700 3600 0    50   ~ 0
-SD_SPI_3
+SD_SPI3
 Text Label 6700 3700 0    50   ~ 0
-SD_SPI_4
+SD_SPI4
 Text Label 7250 3500 0    50   ~ 0
-SD_SPI_[1..4]
+SD_SPI[1..4]
 Text Label 6700 3900 0    50   ~ 0
-LCD_I2C_1
+LCD_I2C1
 Text Label 6700 4000 0    50   ~ 0
-LCD_I2C_2
+LCD_I2C2
 Wire Bus Line
 	7850 3900 7200 3900
-Entry Wire Line
-	7100 4000 7200 4100
-Wire Wire Line
-	6100 4000 7100 4000
 Entry Wire Line
 	7100 3900 7200 4000
 Wire Wire Line
 	6100 3900 7100 3900
-Wire Wire Line
-	7250 4150 7250 4100
-Wire Wire Line
-	7250 4100 7850 4100
-Wire Wire Line
-	7850 4200 6100 4200
-Wire Wire Line
-	7250 4150 7150 4150
-Wire Wire Line
-	7150 4150 7150 4100
-Wire Wire Line
-	7150 4100 6100 4100
 Text Label 7250 3900 0    50   ~ 0
-LCD_I2C_[1..2]
-Wire Wire Line
-	7850 4500 6100 4500
+LCD_I2C[1..2]
 Wire Wire Line
 	5000 4100 3400 4100
 Text HLabel 2550 3900 0    50   Input ~ 0
@@ -181,14 +153,6 @@ Text HLabel 2550 4300 0    50   Input ~ 0
 nFAULT_PB5
 Wire Wire Line
 	5000 4200 2550 4200
-Wire Wire Line
-	6100 4300 7850 4300
-Text HLabel 7850 4300 2    50   Output ~ 0
-SWDIO_PA13
-Text HLabel 7850 4400 2    50   Output ~ 0
-SWCLK_PA14
-Wire Wire Line
-	6100 4400 7850 4400
 Text HLabel 2550 3000 0    50   Input ~ 0
 nRST
 Connection ~ 3950 3000
@@ -583,9 +547,45 @@ Wire Wire Line
 	3250 2250 3250 2300
 Wire Wire Line
 	3250 2300 2850 2300
+Connection ~ 2850 2300
+Wire Wire Line
+	6100 3700 7050 3700
+Entry Wire Line
+	7100 4000 7200 4100
+Wire Wire Line
+	6100 4000 7100 4000
+Text HLabel 7850 3900 2    50   Input ~ 0
+LCD_I2C[1..2]
+Wire Wire Line
+	6100 4400 7850 4400
+Text HLabel 7850 4400 2    50   Output ~ 0
+SWCLK_PA14
+Text HLabel 7850 4300 2    50   Output ~ 0
+SWDIO_PA13
+Wire Wire Line
+	6100 4300 7850 4300
+Wire Wire Line
+	7850 4500 6100 4500
+Wire Wire Line
+	7150 4100 6100 4100
+Wire Wire Line
+	7150 4150 7150 4100
+Wire Wire Line
+	7250 4150 7150 4150
+Wire Wire Line
+	7850 4200 6100 4200
+Wire Wire Line
+	7250 4100 7850 4100
+Wire Wire Line
+	7250 4150 7250 4100
+Text HLabel 7850 4200 2    50   Output ~ 0
+nSLEEP_PA12
+Text HLabel 7850 4100 2    50   Output ~ 0
+DIR_PA11
+Text HLabel 7850 4500 2    50   Output ~ 0
+PWM_PA15
 Wire Bus Line
 	7200 3900 7200 4100
 Wire Bus Line
 	7150 3500 7150 3800
-Connection ~ 2850 2300
 $EndSCHEMATC

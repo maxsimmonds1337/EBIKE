@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 7
+Sheet 3 7
 Title ""
 Date ""
 Rev ""
@@ -87,13 +87,7 @@ Wire Wire Line
 	4850 4650 4850 4850
 Connection ~ 4850 4650
 Entry Wire Line
-	2100 3350 2200 3450
-Entry Wire Line
 	2100 3250 2200 3350
-Wire Bus Line
-	2100 3350 2100 3250
-Wire Bus Line
-	2100 3250 1100 3250
 Wire Wire Line
 	2200 3350 2800 3350
 Wire Wire Line
@@ -105,14 +99,8 @@ Wire Wire Line
 Connection ~ 6700 3000
 Text Notes 3350 3800 0    50   ~ 0
 I2C ADDR = 0x20
-Text HLabel 1100 3250 0    50   Input ~ 0
-LCD_I2C
-Text Label 1400 3250 0    50   ~ 0
-LCD_I2C_[1..2]
-Text Label 3700 3350 0    50   ~ 0
-LCD_I2C_1
-Text Label 3700 3450 0    50   ~ 0
-LCD_I2C_2
+Text Label 2300 3350 0    50   ~ 0
+LCD_I2C1
 Text HLabel 1950 1150 0    50   Input ~ 0
 +3.3v
 Text HLabel 1950 1650 0    50   Input ~ 0
@@ -349,9 +337,9 @@ Connection ~ 2800 2150
 Wire Wire Line
 	2800 2150 3050 2150
 Wire Wire Line
-	3450 2150 3750 2150
+	3450 2150 3800 2150
 Connection ~ 3450 2150
-Text Label 3750 2150 2    50   ~ 0
+Text Label 3800 2150 2    50   ~ 0
 +3.3v
 $Comp
 L Transistor_FET:2N7000 Q9
@@ -487,4 +475,124 @@ F 3 "" H 6700 5100 50  0001 C CNN
 	1    6700 5100
 	1    0    0    -1  
 $EndComp
+Entry Wire Line
+	2100 3350 2200 3450
+Wire Bus Line
+	2100 3350 2100 3250
+Text HLabel 1100 3250 0    50   Input ~ 0
+LCD_I2C[1..2]
+Wire Bus Line
+	2100 3250 1100 3250
+Text Label 1400 3250 0    50   ~ 0
+LCD_I2C[1..2]
+Text Label 2300 3450 0    50   ~ 0
+LCD_I2C2
+$Comp
+L Connector:Conn_01x01_Female J12
+U 1 1 6004AD63
+P 4500 1650
+F 0 "J12" H 4528 1676 50  0000 L CNN
+F 1 "+3V3" H 4528 1585 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 4500 1650 50  0001 C CNN
+F 3 "~" H 4500 1650 50  0001 C CNN
+	1    4500 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J13
+U 1 1 6004AD69
+P 4500 1800
+F 0 "J13" H 4528 1826 50  0000 L CNN
+F 1 "GNDD" H 4528 1735 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 4500 1800 50  0001 C CNN
+F 3 "~" H 4500 1800 50  0001 C CNN
+	1    4500 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 1650 4150 1650
+Text Label 4150 1650 2    50   ~ 0
++3.3v
+$Comp
+L power:GNDD #PWR0131
+U 1 1 600524F2
+P 4150 1800
+F 0 "#PWR0131" H 4150 1550 50  0001 C CNN
+F 1 "GNDD" H 4154 1645 50  0000 C CNN
+F 2 "" H 4150 1800 50  0001 C CNN
+F 3 "" H 4150 1800 50  0001 C CNN
+	1    4150 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 1800 4150 1800
+$Comp
+L Connector:Conn_01x01_Female J16
+U 1 1 6008752C
+P 6100 2250
+F 0 "J16" H 6128 2276 50  0000 L CNN
+F 1 "I2C_SCL_S" H 6128 2185 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 6100 2250 50  0001 C CNN
+F 3 "~" H 6100 2250 50  0001 C CNN
+	1    6100 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J17
+U 1 1 60087532
+P 6100 2400
+F 0 "J17" H 6128 2426 50  0000 L CNN
+F 1 "I2C_SDA_S" H 6128 2335 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 6100 2400 50  0001 C CNN
+F 3 "~" H 6100 2400 50  0001 C CNN
+	1    6100 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 2250 5750 2250
+$Comp
+L Connector:Conn_01x01_Female J14
+U 1 1 6008753A
+P 6100 1700
+F 0 "J14" H 6128 1726 50  0000 L CNN
+F 1 "+3V3_S" H 6128 1635 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 6100 1700 50  0001 C CNN
+F 3 "~" H 6100 1700 50  0001 C CNN
+	1    6100 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J15
+U 1 1 60087540
+P 6100 1850
+F 0 "J15" H 6128 1876 50  0000 L CNN
+F 1 "GNDD_S" H 6128 1785 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 6100 1850 50  0001 C CNN
+F 3 "~" H 6100 1850 50  0001 C CNN
+	1    6100 1850
+	1    0    0    -1  
+$EndComp
+Text Label 5750 2400 2    50   ~ 0
+LCD_I2C2
+Text Label 5750 2250 2    50   ~ 0
+LCD_I2C1
+Wire Wire Line
+	5750 2400 5900 2400
+Text Label 5600 1700 2    50   ~ 0
++3.3v
+$Comp
+L power:GNDD #PWR0137
+U 1 1 600A6F4F
+P 5600 1850
+F 0 "#PWR0137" H 5600 1600 50  0001 C CNN
+F 1 "GNDD" H 5604 1695 50  0000 C CNN
+F 2 "" H 5600 1850 50  0001 C CNN
+F 3 "" H 5600 1850 50  0001 C CNN
+	1    5600 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 1700 5900 1700
+Wire Wire Line
+	5600 1850 5900 1850
 $EndSCHEMATC

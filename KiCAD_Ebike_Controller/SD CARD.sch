@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 7
+Sheet 5 7
 Title ""
 Date ""
 Rev ""
@@ -15,8 +15,8 @@ Comment4 ""
 $EndDescr
 Text HLabel 2500 1900 0    50   Input ~ 0
 GND
-Text HLabel 2400 3100 0    50   Input ~ 0
-SPI
+Text HLabel 1800 3100 0    50   Input ~ 0
+SD_SPI[1..4]
 Text HLabel 2500 1500 0    50   Input ~ 0
 +3.3V
 Wire Wire Line
@@ -28,25 +28,25 @@ Wire Wire Line
 Wire Wire Line
 	2950 1900 2950 2100
 Wire Bus Line
-	2400 3100 3050 3100
+	1800 3100 2450 3100
 Entry Wire Line
-	3050 3200 3150 3300
+	2450 3200 2550 3300
 Entry Wire Line
-	3050 3500 3150 3600
+	2450 3500 2550 3600
 Entry Wire Line
-	3050 3700 3150 3800
-Text Label 2500 3100 0    50   ~ 0
-SD_SPI_[1..4]
-Text Label 3200 3300 0    50   ~ 0
-SD_SPI_1
-Text Notes 3650 3300 0    50   ~ 0
+	2450 3700 2550 3800
+Text Label 1900 3100 0    50   ~ 0
+SD_SPI[1..4]
+Text Label 2600 3300 0    50   ~ 0
+SD_SPI1
+Text Notes 3750 3300 0    50   ~ 0
 SPI1_NSS
-Text Label 3200 3600 0    50   ~ 0
-SD_SPI_2
-Text Label 3200 3800 0    50   ~ 0
-SD_SPI_3
-Text Label 3200 3400 0    50   ~ 0
-SD_SPI_4
+Text Label 2600 3600 0    50   ~ 0
+SD_SPI2
+Text Label 2600 3800 0    50   ~ 0
+SD_SPI3
+Text Label 2550 4000 0    50   ~ 0
+SD_SPI4
 Wire Wire Line
 	5400 3500 5250 3500
 Wire Wire Line
@@ -55,14 +55,14 @@ Wire Wire Line
 	5400 3700 5250 3700
 Wire Wire Line
 	5250 3700 5250 4400
-Text Notes 3650 3600 0    50   ~ 0
+Text Notes 3750 3600 0    50   ~ 0
 SPI1_SCK
-Text Notes 3650 3800 0    50   ~ 0
+Text Notes 3750 3800 0    50   ~ 0
 SPI1_MISO
-Text Notes 3650 3400 0    50   ~ 0
+Text Notes 3750 3400 0    50   ~ 0
 SPI1_MOSI
 Entry Wire Line
-	3050 3300 3150 3400
+	2450 3900 2550 4000
 Wire Wire Line
 	7100 4100 7200 4100
 Wire Wire Line
@@ -128,17 +128,11 @@ F 3 "~" H 5050 3800 50  0001 C CNN
 	0    -1   1    0   
 $EndComp
 Wire Wire Line
-	3150 3600 4300 3600
-Wire Wire Line
 	4500 3600 5400 3600
 Wire Wire Line
 	5400 3800 5150 3800
 Wire Wire Line
-	3150 3800 4950 3800
-Wire Wire Line
-	3150 3400 4900 3400
-Wire Wire Line
-	3150 3300 4300 3300
+	2550 3300 4300 3300
 Wire Wire Line
 	4500 3300 5400 3300
 Wire Wire Line
@@ -147,8 +141,6 @@ Text Label 2950 1350 0    50   ~ 0
 +3.3v
 Text Label 5250 2750 0    50   ~ 0
 +3.3v
-Wire Bus Line
-	3050 3100 3050 3700
 $Comp
 L power:GNDD #PWR0130
 U 1 1 5FEADF63
@@ -162,4 +154,16 @@ F 3 "" H 2950 2100 50  0001 C CNN
 $EndComp
 Text HLabel 5250 4500 0    50   Input ~ 0
 GND
+Wire Wire Line
+	2550 4000 3100 4000
+Wire Wire Line
+	3100 4000 3100 3400
+Wire Wire Line
+	3100 3400 4900 3400
+Wire Wire Line
+	2550 3800 4950 3800
+Wire Wire Line
+	2550 3600 4300 3600
+Wire Bus Line
+	2450 3100 2450 3900
 $EndSCHEMATC
