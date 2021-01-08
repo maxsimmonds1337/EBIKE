@@ -110,7 +110,7 @@ Wire Wire Line
 Wire Wire Line
 	1100 1650 850  1650
 Wire Wire Line
-	5700 1200 5850 1400
+	5850 1200 5850 1400
 Wire Wire Line
 	850  1200 850  1550
 Wire Wire Line
@@ -148,12 +148,12 @@ Text Label 5850 2150 0    50   ~ 0
 $Comp
 L power:+48V #PWR0105
 U 1 1 5FB22E4A
-P 5700 1200
-F 0 "#PWR0105" H 5700 1050 50  0001 C CNN
-F 1 "+48V" H 5715 1373 50  0000 C CNN
-F 2 "" H 5700 1200 50  0001 C CNN
-F 3 "" H 5700 1200 50  0001 C CNN
-	1    5700 1200
+P 5850 1200
+F 0 "#PWR0105" H 5850 1050 50  0001 C CNN
+F 1 "+48V" H 5865 1373 50  0000 C CNN
+F 2 "" H 5850 1200 50  0001 C CNN
+F 3 "" H 5850 1200 50  0001 C CNN
+	1    5850 1200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -761,45 +761,45 @@ F21 "MODE1_SW_PB7" I L 3400 3300 50
 F22 "LCD_I2C[1..2]" I R 5550 4000 50 
 $EndSheet
 $Comp
-L Mechanical:MountingHole H?
+L Mechanical:MountingHole H1
 U 1 1 600BEACE
 P 5400 6800
-F 0 "H?" H 5500 6846 50  0000 L CNN
+F 0 "H1" H 5500 6846 50  0000 L CNN
 F 1 "MountingHole" H 5500 6755 50  0000 L CNN
-F 2 "" H 5400 6800 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 5400 6800 50  0001 C CNN
 F 3 "~" H 5400 6800 50  0001 C CNN
 	1    5400 6800
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H?
+L Mechanical:MountingHole H3
 U 1 1 600BFB0E
 P 6150 6800
-F 0 "H?" H 6250 6846 50  0000 L CNN
+F 0 "H3" H 6250 6846 50  0000 L CNN
 F 1 "MountingHole" H 6250 6755 50  0000 L CNN
-F 2 "" H 6150 6800 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965" H 6150 6800 50  0001 C CNN
 F 3 "~" H 6150 6800 50  0001 C CNN
 	1    6150 6800
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H?
+L Mechanical:MountingHole H4
 U 1 1 600BFEEB
 P 6150 7150
-F 0 "H?" H 6250 7196 50  0000 L CNN
+F 0 "H4" H 6250 7196 50  0000 L CNN
 F 1 "MountingHole" H 6250 7105 50  0000 L CNN
-F 2 "" H 6150 7150 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965" H 6150 7150 50  0001 C CNN
 F 3 "~" H 6150 7150 50  0001 C CNN
 	1    6150 7150
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H?
+L Mechanical:MountingHole H2
 U 1 1 600C0109
 P 5400 7150
-F 0 "H?" H 5500 7196 50  0000 L CNN
+F 0 "H2" H 5500 7196 50  0000 L CNN
 F 1 "MountingHole" H 5500 7105 50  0000 L CNN
-F 2 "" H 5400 7150 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 5400 7150 50  0001 C CNN
 F 3 "~" H 5400 7150 50  0001 C CNN
 	1    5400 7150
 	1    0    0    -1  
