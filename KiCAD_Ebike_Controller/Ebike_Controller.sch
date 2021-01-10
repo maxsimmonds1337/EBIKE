@@ -34,15 +34,13 @@ Wire Bus Line
 Wire Bus Line
 	8100 2350 8500 2350
 Wire Wire Line
-	5850 1400 5850 1950
+	6000 1400 6000 1950
 Wire Wire Line
-	5850 1950 6250 1950
+	6000 1950 6250 1950
 Wire Wire Line
 	5550 2700 6250 2700
 Wire Wire Line
 	5550 2800 6250 2800
-Wire Wire Line
-	5550 3200 6250 3200
 Wire Wire Line
 	6250 3100 5550 3100
 Wire Wire Line
@@ -110,7 +108,7 @@ Wire Wire Line
 Wire Wire Line
 	1100 1650 850  1650
 Wire Wire Line
-	5850 1200 5850 1400
+	6000 1200 6000 1400
 Wire Wire Line
 	850  1200 850  1550
 Wire Wire Line
@@ -121,8 +119,6 @@ Text Label 8250 3800 0    50   ~ 0
 LSS
 Wire Wire Line
 	1550 6950 1900 6950
-Wire Wire Line
-	1550 6550 1900 6550
 Text Notes 800  6850 0    50   ~ 0
 SWD\nProgramming\nInput
 Wire Wire Line
@@ -142,18 +138,18 @@ Wire Wire Line
 Wire Wire Line
 	7550 5450 7550 5500
 Wire Wire Line
-	6250 2150 5850 2150
-Text Label 5850 2150 0    50   ~ 0
+	6250 2150 6000 2150
+Text Label 6000 2150 0    50   ~ 0
 +3.3V
 $Comp
 L power:+48V #PWR0105
 U 1 1 5FB22E4A
-P 5850 1200
-F 0 "#PWR0105" H 5850 1050 50  0001 C CNN
-F 1 "+48V" H 5865 1373 50  0000 C CNN
-F 2 "" H 5850 1200 50  0001 C CNN
-F 3 "" H 5850 1200 50  0001 C CNN
-	1    5850 1200
+P 6000 1200
+F 0 "#PWR0105" H 6000 1050 50  0001 C CNN
+F 1 "+48V" H 6015 1373 50  0000 C CNN
+F 2 "" H 6000 1200 50  0001 C CNN
+F 3 "" H 6000 1200 50  0001 C CNN
+	1    6000 1200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -178,8 +174,6 @@ Text Label 3050 2650 0    50   ~ 0
 Wire Wire Line
 	3400 2750 2800 2750
 Wire Wire Line
-	2800 2750 2800 1700
-Wire Wire Line
 	2800 1700 2300 1700
 Wire Wire Line
 	2300 1800 2700 1800
@@ -198,8 +192,6 @@ F 3 "~" H 2100 2800 50  0001 C CNN
 	1    2100 2800
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	1550 5450 1900 5450
 Wire Wire Line
 	1900 5450 1900 5250
 Text Label 1900 5250 0    50   ~ 0
@@ -376,8 +368,8 @@ F3 "SD_SPI[1..4]" I L 7700 5300 50
 F4 "+3.3V" I L 7700 5150 50 
 $EndSheet
 Wire Wire Line
-	8500 1400 5850 1400
-Connection ~ 5850 1400
+	8500 1400 6000 1400
+Connection ~ 6000 1400
 $Comp
 L Connector:Conn_01x06_Female J1
 U 1 1 5FC2E4D0
@@ -517,7 +509,7 @@ F1 "BLDC Driver.sch" 50
 F2 "HC" I L 6250 3800 50 
 F3 "HB" I L 6250 3700 50 
 F4 "HA" I L 6250 3600 50 
-F5 "nSLEEP_PA2" I L 6250 3200 50 
+F5 "nSLEEP_PA12" I L 6250 3200 50 
 F6 "nBRAKE_PA3" I L 6250 3100 50 
 F7 "PWM_PA0" I L 6250 2800 50 
 F8 "DIR_PA1" I L 6250 2700 50 
@@ -802,6 +794,78 @@ F 1 "MountingHole" H 5500 7105 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3" H 5400 7150 50  0001 C CNN
 F 3 "~" H 5400 7150 50  0001 C CNN
 	1    5400 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Small D?
+U 1 1 60355900
+P 1750 6550
+AR Path="/5F8D3A83/60355900" Ref="D?"  Part="1" 
+AR Path="/60355900" Ref="D11"  Part="1" 
+F 0 "D11" H 1700 6650 50  0000 L CNN
+F 1 "STPS2L60ZFY" H 1150 6650 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" V 1750 6550 50  0001 C CNN
+F 3 "~" V 1750 6550 50  0001 C CNN
+	1    1750 6550
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 6550 1550 6550
+Wire Wire Line
+	1850 6550 1900 6550
+Wire Wire Line
+	1550 5450 1900 5450
+Wire Wire Line
+	2800 2750 2800 1700
+Wire Wire Line
+	3950 1700 2800 1700
+Connection ~ 2800 1700
+$Comp
+L Device:D_Small D?
+U 1 1 6038D2A5
+P 4900 1700
+AR Path="/5F8D3A83/6038D2A5" Ref="D?"  Part="1" 
+AR Path="/6038D2A5" Ref="D12"  Part="1" 
+F 0 "D12" H 4850 1900 50  0000 L CNN
+F 1 "STPS2L60ZFY" H 4650 1800 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" V 4900 1700 50  0001 C CNN
+F 3 "~" V 4900 1700 50  0001 C CNN
+	1    4900 1700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4350 1700 4800 1700
+$Comp
+L Device:D_Small D?
+U 1 1 60394A18
+P 5650 3200
+AR Path="/5F8D3A83/60394A18" Ref="D?"  Part="1" 
+AR Path="/60394A18" Ref="D13"  Part="1" 
+F 0 "D13" H 5600 3500 50  0000 L CNN
+F 1 "STPS2L60ZFY" H 5350 3400 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" V 5650 3200 50  0001 C CNN
+F 3 "~" V 5650 3200 50  0001 C CNN
+	1    5650 3200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5750 3200 5800 3200
+Wire Wire Line
+	5800 3200 5800 1700
+Connection ~ 5800 3200
+Wire Wire Line
+	5800 3200 6250 3200
+Wire Wire Line
+	5000 1700 5800 1700
+$Comp
+L Switch:SW_SPST SW2
+U 1 1 5FFB1A1D
+P 4150 1700
+F 0 "SW2" H 4150 1935 50  0000 C CNN
+F 1 "SW_SPST" H 4150 1844 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4150 1700 50  0001 C CNN
+F 3 "~" H 4150 1700 50  0001 C CNN
+	1    4150 1700
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

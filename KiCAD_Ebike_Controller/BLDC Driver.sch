@@ -635,7 +635,7 @@ PWM_PA0
 Text HLabel 2800 3800 0    50   Input ~ 0
 nBRAKE_PA3
 Text HLabel 2800 3700 0    50   Input ~ 0
-nSLEEP_PA2
+nSLEEP_PA12
 Text HLabel 2800 4000 0    50   Input ~ 0
 HA
 Text HLabel 2800 4100 0    50   Input ~ 0
